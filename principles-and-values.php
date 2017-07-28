@@ -71,13 +71,14 @@
 
             <div id="page-what-we-do-intro-introduction">
               <div class="default-copy">
-                <p>At Rippledot Capital our first and foremost commitment is to our clients and their interests</p>
+                <p>Based in Singapore but propelled by a global vision,</p>
               </div>
             </div> <!-- page-what-we-do-intro-introduction -->
 
             <div id="page-what-we-do-intro-copy">
               <div class="default-copy">
-                <p>Rippledot Capital is uniquely positioned to connect companies, entrepreneurs and investors to the vast opportunities emerging in the Asia Pacific region. We have a deep business and cultural understanding of the region which allows us to give unique insights into opportunities and business strategies. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                <p>Rippledot is inspired by the “Little Red Dot” in which we were founded — a nation that has used its size to its advantage, positioning itself as a reputable and efficient hub from which to explore the rest of Asia, adding value to businesses and creating ripples not just across the region but the entire world.</p>
+                <p>Rippledot has a similar vision. To be an effective, reliable partner and advisor to our clients, enabling them to create ripples of their own.</p>
               </div>
             </div> <!-- page-what-we-do-intro-copy -->
           </div> <!-- page-what-we-do-intro-content -->

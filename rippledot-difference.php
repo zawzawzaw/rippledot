@@ -48,26 +48,26 @@
 
               <div class="page-rippledot-difference-item">
                 <h4>01</h4>
-                <h3>Senior level attention</h3>
-                <p>Depth of engagement with focused and dedicated senior level attention on every deal; a lot of hard work and time spent going very deep into a business to understand and to increase chances of getting a deal done.</p>
+                <h3>Dedicated senior-level attention</h3>
+                <p>Clients can expect the focus and dedication of senior executives from deal origination to transaction execution. We dig deep with our clients, going the extra mile to understand their business even better than they do.</p>
               </div> <!-- page-rippledot-difference-item -->
 
               <div class="page-rippledot-difference-item">
                 <h4>02</h4>
-                <h3>Our clients come first</h3>
-                <p>Client-driven, with bespoke and well thought out solutions for clients, managing the deal process from start to end. Not a cookie-cutter approach used by international banks.</p>
+                <h3>Client-first service</h3>
+                <p>Forget cookie-cutter approaches. At Rippledot, we believe in providing personalised, client-driven service and bespoke solutions built from extensive analysis and a deep business and cultural understanding of the Asia-Pacific region and beyond.</p>
               </div> <!-- page-rippledot-difference-item -->
 
               <div class="page-rippledot-difference-item">
                 <h4>03</h4>
-                <h3>Elite advisors working as a team</h3>
-                <p>Strong, dedicated and experienced team; lean but elite, “rowing in the same boat, in the same direction”. Clients enjoy the continuity of seeing the same faces. The whole team reaches up and down for what they want to achieve on a deal.</p>
+                <h3>Elite advisors, top advice</h3>
+                <p>Our lean but elite team of advisors is committed, first and foremost, to giving our clients good and honest advice, and the dedication and focus to get any project across the line. Always in the same boat as our clients, we row together in the same direction.</p>
               </div> <!-- page-rippledot-difference-item -->
 
               <div class="page-rippledot-difference-item">
                 <h4>04</h4>
-                <h3>Processes that are proven in success</h3>
-                <p>The process at Rippledot can’t be easily replicated and that is what differentiates us; high valuations are an outcome of that process.</p>
+                <h3>Proven track record</h3>
+                <p>The Rippledot formula is one that can’t easily be replicated. And it’s one has resulted in a proven track record of successful transactions &mdash; and high valuations &mdash; in the region and beyond.</p>
               </div> <!-- page-rippledot-difference-item -->
 
             </div> <!-- page-rippledot-difference-item-container -->

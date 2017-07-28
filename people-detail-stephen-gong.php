@@ -52,7 +52,7 @@
                       <div class="banner-copy-quote">
                         <p>
                           <span class="quote-start"></span>
-                          Each Team Member brings extensive industry knowledge, unrivaled relationships and substantial deal experience, resulting in a team of the industry's most sought after advisors.
+                          At Rippledot, M&A is done in a first-class way. There’s a high-quality focus on the execution of deals, and helping clients first and foremost.
                           <span class="quote-end"></span>
                         </p>
                       </div> <!-- banner-copy-quote -->

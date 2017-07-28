@@ -52,7 +52,7 @@
                       <div class="banner-copy-quote">
                         <p>
                           <span class="quote-start"></span>
-                          Each Team Member brings extensive industry knowledge, unrivaled relationships and substantial deal experience, resulting in a team of the industry's most sought after advisors.
+                          At big banks, you’re covering several projects at any one time, casting a wide net in the hopes that one thing will go through. But at Rippledot, you devote 100% attention to your client. It’s client-oriented. It’s results-oriented.
                           <span class="quote-end"></span>
                         </p>
                       </div> <!-- banner-copy-quote -->

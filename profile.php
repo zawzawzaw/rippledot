@@ -76,15 +76,14 @@
             <div id="page-profile-intro-introduction">
               <div class="default-copy">
                 <h3>Welcome to Rippledot Capital</h3>
-                <p>Rippledot Capital provides its clients with deep strategic insights and regional connectivity, delivering senior level executive experience and expertise with first class transaction execution.</p>
+                <p>As one of Southeast Asia’s leading independent strategic and financial advisory firms, we are uniquely positioned to connect companies, entrepreneurs and investors to the vast opportunities emerging in the Asia-Pacific region.</p>
               </div>
             </div> <!-- page-profile-intro-introduction -->
 
             <div id="page-what-we-do-intro-copy">
               <div class="default-copy">
-                <p>Rippledot Capital is an independent strategic and financial adviser to corporates, entrepreneurs and investors focused in the Asia Pacific region.</p>
-                <p>We strive to create significant value for our clients based on our core principles of Complete Client Commitment, Regional Expertise, Sector Expertise and First Class Execution.</p>
-                <p>Rippledot Capital Advisers was awarded "Best Investment Bank for the Venture Capital and Private Equity Industry" in 2013 by the Singapore Venture Capital and Private Equity Association.</p>
+                <p>We provide M&A, as well as strategy and financing advice. Our expertise spans a wide array of key sectors, including Telecoms, Media and Technology (TMT), Oil & Gas support services, Industrials and Food and Beverage.</p>
+                <p>Rippledot was named the Best Investment Bank for the Venture Capital and Private Equity Industry by the Singapore Venture Capital and Private Equity Association in 2013.</p>
               </div>
             </div> <!-- page-what-we-do-intro-copy -->
           </div> <!-- page-what-we-do-intro-content -->

@@ -62,13 +62,15 @@
 
                 <div id="page-careers-intro-introduction">
                   <div class="default-copy">
-                    <p>The work you do will have a direct effect on business and the community. At Rippledot Capital, you will make an impact.</p>
+                    <p>Client-focused, results-oriented, lean, elite and collaborative: That’s the Rippledot team in a nutshell. <strong>Team</strong> is the operative word here.</p>
                   </div>
                 </div>
 
                 <div id="page-careers-intro-copy">
                   <div class="default-copy">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Come sociis natoque penatibus there magnis distance parturient montes, nascetur ridiculus muster. Donec quamur felis, ultricies nectur, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vellvet aliquet necty, vulputate eget, arcu. In enim justo rhoncus ut imperdiet anther venenatis.</p>
+                    <p>“We don’t have a ‘soccer hero’ kind of culture,” says CEO Atin Kukreja. “We are more akin to a rugby team, a team with great instincts that works together in a high-stakes environment to get that ball across the line.”</p>
+                    <p>Whether you’re joining us as an established professional or a recent graduate, expect to do meaningful work on a daily basis, diving deep with clients to thoroughly dissect their business and deeply understand their challenges and their strengths.</p>
+                    <p>Expect success too. Our consultancy-based methods have a proven track record of successful transactions and high valuations in Southeast Asia and beyond.</p>
                   </div>
                 </div>
 
