@@ -1,0 +1,548 @@
+
+@-webkit-keyframes sidebar_menu_appear {
+  0% { 
+    .transform( translate3d(20px,0,0) );
+    .opacity(0);
+  }
+  100% { 
+    .transform( translate3d(0,0,0) );  
+    .opacity(1);
+  }
+}
+@keyframes sidebar_menu_appear {
+  0% { 
+    .transform( translate3d(20px,0,0) );
+    .opacity(0);
+  }
+  100% { 
+    .transform( translate3d(0,0,0) );  
+    .opacity(1);
+  }
+}
+
+
+@-webkit-keyframes sidebar_menu_disappear {
+  0% { 
+    .transform( translate3d(0,0,0) );  
+    .opacity(1);
+  }
+  100% { 
+    .transform( translate3d(20px,0,0) );  
+    .opacity(0);
+  }
+}
+@keyframes sidebar_menu_disappear {
+  0% { 
+    .transform( translate3d(0,0,0) );  
+    .opacity(1);
+  }
+  100% { 
+    .transform( translate3d(20px,0,0) );  
+    .opacity(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@desktop-sidebar-width: 222px;
+@desktop-sidebar-heigth: 150px;
+
+
+
+#desktop-sidebar{
+  position: fixed;
+  z-index: 200000;
+  // bottom: 119px;
+  /// bottom: 119px + 60px;
+  bottom: 183px;
+  right: 0px;
+
+  width: @desktop-sidebar-width;
+  height: @desktop-sidebar-heigth;
+
+  background: transparent;
+
+  &.center-version{
+    bottom: 50%;
+    margin-bottom: -42px - 60px;
+  }
+
+  @media only screen and (max-width: 1280px) {
+    top: 60px + 60px + 20px;
+    bottom: auto !important;
+  }
+
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    display: none;  // josh asked me to remove this on tablet landscape
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    display: none;
+  }
+
+  @media only screen and (max-height: 900px) {
+    top: 60px + 60px + 20px;
+    bottom: auto !important;
+  }
+
+} // #desktop-sidebar
+
+
+
+
+
+
+
+#desktop-sidebar-menu{
+  text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: @desktop-sidebar-width;
+  height: @desktop-sidebar-heigth;
+
+  nav{
+
+    ul{
+      display: block;
+
+      li{
+
+        a{
+          .clan-pro-medium;
+          font-size: 13px;
+          line-height: 20px;
+          //letter-spacing: 0.075em;
+          letter-spacing: 0.13em;
+          text-transform: uppercase;
+          // color: @white;
+
+          display: block;
+          padding-top: 16px;
+          padding-bottom: 13px;
+          padding-left: 21px;
+          padding-right: 0px;
+        }
+
+      }
+    }
+  }
+
+
+  .link-01,
+  .link-02,
+  .link-03{
+    color: @grey;
+
+    .transition-in(0.3s);
+    .opacity(0);
+
+    &.selected{
+      color: @white;
+    }
+    &.selected-temp{
+      color: @white;
+    }
+    
+  }
+
+
+  .link-01{
+    -webkit-animation: sidebar_menu_disappear 0.3s both ease-out 0.25s;
+    animation: sidebar_menu_disappear 0.3s both ease-out 0.25s;
+  }
+  .link-02{
+    -webkit-animation: sidebar_menu_disappear 0.3s both ease-out 0.15s;
+    animation: sidebar_menu_disappear 0.3s both ease-out 0.15s;
+  }
+  .link-03{
+    -webkit-animation: sidebar_menu_disappear 0.3s both ease-out 0.05s;
+    animation: sidebar_menu_disappear 0.3s both ease-out 0.05s;
+  }
+
+}
+
+#desktop-sidebar-lines{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: @desktop-sidebar-width;
+  height: @desktop-sidebar-heigth;
+
+  .line-01{
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.35s);
+  }
+  .line-02{
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.30s);
+  }
+  .line-03{
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.25s);
+  }
+  
+  .line-01,
+  .line-02,
+  .line-03{
+    position: absolute;
+    right: 0px;
+    width: 38px;
+    border-bottom: 1px solid @light-grey;
+
+    &.selected{
+      width: 57px;
+      border-bottom: 1px solid @red;
+    }
+    &.selected-temp{
+      width: 57px;
+      border-bottom: 1px solid @red;
+    }
+  }
+
+  .line-01{
+    top: 49px;
+  }
+  .line-02{
+    top: 90px;
+  }
+  .line-03{
+    top: 131px;
+  }
+
+}
+
+#desktop-sidebar-boxes{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: @desktop-sidebar-width;
+  height: @desktop-sidebar-heigth;
+
+  .box-01,
+  .box-02,
+  .box-03{
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    height: 49px;
+
+    background: @off-white;
+
+    &:after{
+      content: '';
+      display: block;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 0px;
+      height: 49px;
+
+      background: @red;
+      .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.0s);
+    }
+
+    &.selected{
+      background: @red;
+    }
+
+    &.selected-temp{
+      
+      &:after{
+        width: @desktop-sidebar-width;
+        .transition-in(0.25s, cubic-bezier(0.645, 0.045, 0.355,0));
+      }
+    }
+
+    // .opacity(0);
+    .transition-in(0.3s);
+  }
+
+  .box-01{
+    top: 49px - 49px;
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);
+  }
+  .box-02{
+    top: 98px - 49px;
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.25s);
+  }
+  .box-03{
+    top: 147px - 49px;
+    .transition-in(0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.2s);
+  }
+
+}
+
+
+
+
+//    ____ ___ ____    _    ____  _     _____
+//   |  _ \_ _/ ___|  / \  | __ )| |   | ____|
+//   | | | | |\___ \ / _ \ |  _ \| |   |  _|
+//   | |_| | | ___) / ___ \| |_) | |___| |___
+//   |____/___|____/_/   \_\____/|_____|_____|
+//
+
+#desktop-sidebar.disabled-version{
+  #desktop-sidebar-menu{
+    pointer-events: none;
+  }
+
+  // ignore disabled menu
+  &.red-version{
+    #desktop-sidebar-menu{
+      pointer-events: auto;
+    }
+  }
+}
+
+//    _______  ______   _    _   _ ____
+//   | ____\ \/ /  _ \ / \  | \ | |  _ \
+//   |  _|  \  /| |_) / _ \ |  \| | | | |
+//   | |___ /  \|  __/ ___ \| |\  | |_| |
+//   |_____/_/\_\_| /_/   \_\_| \_|____/
+//
+
+#desktop-sidebar.expand-version{
+
+  #desktop-sidebar-menu{
+    .link-01{
+      -webkit-animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
+      animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
+    }
+    .link-02{
+      -webkit-animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.6s;
+      animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.6s;
+    }
+    .link-03{
+      -webkit-animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.65s;
+      animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.65s;
+    }
+  }
+
+  #desktop-sidebar-lines{
+    .line-01{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.2s);
+    }
+    .line-02{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.25s);
+    }
+    .line-03{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);
+    }
+
+    .line-01{
+      width: @desktop-sidebar-width;
+      top: 49px;
+    }
+    .line-02{
+      width: @desktop-sidebar-width;
+      top: 98px;
+    }
+    .line-03{
+      width: @desktop-sidebar-width;
+      top: 147px;
+    }
+  }
+
+  #desktop-sidebar-boxes{
+    .box-01{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.3s);
+    }
+    .box-02{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.4s);
+    }
+    .box-03{
+      .transition-in(0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.5s);
+    }
+
+    .box-01,
+    .box-02,
+    .box-03{
+      // .opacity(1);
+      width: @desktop-sidebar-width;
+    }
+  }
+
+}
+
+
+
+//   __        ___   _ ___ _____ _____
+//   \ \      / / | | |_ _|_   _| ____|
+//    \ \ /\ / /| |_| || |  | | |  _|
+//     \ V  V / |  _  || |  | | | |___
+//      \_/\_/  |_| |_|___| |_| |_____|
+//
+
+#desktop-sidebar.white-version{
+  #desktop-sidebar-menu{
+    .link-01,
+    .link-02,
+    .link-03{
+      color: @white;
+
+      &.selected{
+        color: @white;
+      }
+      &.selected-temp{
+        color: @white;
+      }
+      
+    }
+  }
+  #desktop-sidebar-lines{
+    .line-01,
+    .line-02,
+    .line-03{
+      border-bottom: 1px solid @white;
+
+      &.selected{
+        border-bottom: 1px solid @red;
+      }
+      &.selected-temp{
+        border-bottom: 1px solid @red;
+      }
+    }
+  }
+  #desktop-sidebar-boxes{
+    .box-01,
+    .box-02,
+    .box-03{
+    }
+  }
+}
+
+#desktop-sidebar.white-version.expand-version{
+  #desktop-sidebar-menu{
+  }
+  #desktop-sidebar-lines{
+    .line-01,
+    .line-02,
+    .line-03{
+      border-bottom: 1px solid @light-grey;
+      &.selected{
+        border-bottom: 1px solid @red;
+      }
+      &.selected-temp{
+        border-bottom: 1px solid @red;
+      }
+      
+    }
+  }
+  #desktop-sidebar-boxes{
+    .box-01,
+    .box-02,
+    .box-03{
+      // .opacity(0);
+      width: 0;
+
+      &.selected{
+        // .opacity(1);
+        width: @desktop-sidebar-width;
+      }
+      &.selected-temp{
+        .opacity(1);
+        //width: @desktop-sidebar-width;
+      }
+      
+    }
+  }
+
+}
+
+
+
+
+//    ____  _____ ____
+//   |  _ \| ____|  _ \
+//   | |_) |  _| | | | |
+//   |  _ <| |___| |_| |
+//   |_| \_\_____|____/
+//
+
+
+#desktop-sidebar.red-version,
+#desktop-sidebar.red-version.expand-version{
+
+  #desktop-sidebar-menu{
+    .link-01,
+    .link-02,
+    .link-03{
+      /*
+      -webkit-animation: none;
+      animation: none;
+      .transform( translate3d(0,0,0) );  
+      .opacity(1);
+      */
+      color: @white;
+
+      &.selected{
+        color: @white;
+      }
+      &.selected-temp{
+        color: @white;
+      }
+      
+
+      -webkit-animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
+      animation: sidebar_menu_appear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
+    }
+  }
+
+  #desktop-sidebar-lines{
+    .line-01,
+    .line-02,
+    .line-03{
+      width: @desktop-sidebar-width;
+      border-bottom: 1px solid @red;
+    }
+    .line-01{
+      top: 49px;
+    }
+    .line-02{
+      top: 98px;
+    }
+    .line-03{
+      top: 147px;
+    }
+  }
+  #desktop-sidebar-boxes{
+    .box-01,
+    .box-02,
+    .box-03{
+      width: 0px;
+      // .opacity(0);
+      // .opacity(1);
+
+      &.selected{
+
+        /*
+        width: 0px;
+        .opacity(1);
+        width: @desktop-sidebar-width;
+        */
+      }
+
+      &.selected-temp{
+
+
+
+        /*
+        width: 0px;
+        .opacity(1);
+        width: @desktop-sidebar-width;
+        */
+      }
+    }
+  }
+  
+}

@@ -1,0 +1,337 @@
+
+
+.desktop-footer-spacer{
+  height: 288px;
+}
+
+#desktop-footer{
+  background: @dark-grey;
+  color: @light-grey;
+}
+
+
+body.actual-mobile-version{
+
+
+  #desktop-footer{
+
+  }
+
+}
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  #desktop-footer{
+
+  }
+}
+
+
+
+
+
+body.mobile-menu-open-version{
+
+  #desktop-footer{
+    display: none;
+  }
+}
+
+// TABLET PORTRAIT
+@media only screen and (max-width: 991px) {
+  #desktop-footer{
+    display: none;
+  }
+}
+
+
+#desktop-footer-content{
+  padding-top: 30px;
+  // padding-bottom: 9px;
+  padding-bottom: 6px;
+
+  @media only screen and (max-width: 1280px) {
+    padding-top: 30px * 0.9;
+    // padding-bottom: 9px * 0.9;
+    padding-bottom: 6px * 0.9;
+  }
+}
+
+//    _     ___   ____  ___
+//   | |   / _ \ / ___|/ _ \
+//   | |  | | | | |  _| | | |
+//   | |__| |_| | |_| | |_| |
+//   |_____\___/ \____|\___/
+//
+
+
+#desktop-footer-logo-container{
+  // padding-top: 14px;
+  padding-top: 10px;
+
+}
+
+#desktop-footer-logo{
+  .temp-desktop-footer-logo;
+}
+
+//    _     ___ _   _ _  __
+//   | |   |_ _| \ | | |/ /
+//   | |    | ||  \| | ' /
+//   | |___ | || |\  | . \
+//   |_____|___|_| \_|_|\_\
+//
+
+#desktop-footer-link-container{
+  padding-top: 3px;
+
+  nav {
+    font-size: 0;
+    .justify-inline-blocks;
+
+    > ul {
+      .display-inline-block;
+      line-height: 25px;
+
+      > li {
+        line-height: 25px;
+
+        margin-bottom: 9px;
+
+        &:last-child{
+          margin-bottom: 0px !important;
+        }
+
+        > a {
+          .clan-pro-news;
+          font-size: 13px;
+          line-height: 25px;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+
+          color: @light-grey;
+
+
+          &:hover,
+          &:focus{
+            color: @white;
+          }
+        }
+
+        &.selected{
+          > a {
+            color: @white;
+          }
+        }
+
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    padding-top: 3px * 0.9;
+    nav {
+      > ul {
+        line-height: 25px * 0.9;
+        > li {
+          line-height: 25px * 0.9;
+          margin-bottom: 9px * 0.9;
+
+          &:last-child{
+            margin-bottom: 0px !important;
+          }
+
+          > a {
+            font-size: 13px * 0.9;
+            line-height: 25px * 0.9;
+          }
+        }
+      }
+    }
+  } // 
+
+
+}
+
+
+.desktop-footer-seperator{
+  position: relative;
+  // height: 160px;
+  height: 120px;
+  width: 100%;
+
+  &:after{
+    content: '';
+    display: block;
+
+    position: absolute;
+    // top: 10px;
+    top: 5px;
+    left: 50%;
+    width: 0;
+    // height: 160px;
+    height: 120px;
+
+    border-left: 1px solid #707070;
+  }
+}
+
+//     ____ ___  _   _ _____  _    ____ _____
+//    / ___/ _ \| \ | |_   _|/ \  / ___|_   _|
+//   | |  | | | |  \| | | | / _ \| |     | |
+//   | |__| |_| | |\  | | |/ ___ \ |___  | |
+//    \____\___/|_| \_| |_/_/   \_\____| |_|
+//
+
+#desktop-footer-contact-container{
+  // padding-top: 14px;
+  /// padding-top: 12px;
+}
+#desktop-footer-contact{
+  h3{
+    // .clan-pro-bold;
+    .clan-pro-medium;
+
+    // font-size: 22px;
+    // line-height: 35px;
+    
+    font-size: 20px;
+    line-height: 25px;
+    color: #cccccc;
+
+    margin-bottom: 3px;
+  }
+  p{
+    font-size: 14px;
+    line-height: 25px;
+
+
+
+    white-space: nowrap;
+  }
+
+
+  ul{
+    padding-top: 3px;
+
+    li{
+
+      font-size: 0;
+
+      span{
+        color: @red;
+        font-size: 13px;
+        line-height: 24px;
+
+        margin-right: 11px;
+      }
+
+      a{
+        font-size: 14px;
+        line-height: 24px;
+        color: @light-grey;
+
+        &:hover,
+        &:focus{
+          color: @white;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1280px) {
+    h3{
+      font-size: 20px * 0.9;
+      line-height: 25px * 0.9;
+      margin-bottom: 3px * 0.9;
+    }
+    p{
+      font-size: 14px * 0.9;
+      line-height: 25px * 0.9;
+    }
+    ul{
+      // padding-top: 3px * 0.9;
+      
+      li{
+        span{
+          font-size: 13px * 0.9;
+          line-height: 24px * 0.9;
+          margin-right: 11px * 0.9;
+        }
+        a{
+          font-size: 14px * 0.9;
+          line-height: 24px * 0.9;
+        }
+      }
+    }
+  } // 
+
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    p{
+      font-size: 11px;
+      line-height: 20px;
+      letter-spacing: 0em;
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    p{
+      font-size: 13px;
+      line-height: 20px;
+      white-space: normal;
+    }
+  }
+
+}
+
+//     ____ ___  ______   ______  ___ ____ _   _ _____
+//    / ___/ _ \|  _ \ \ / /  _ \|_ _/ ___| | | |_   _|
+//   | |  | | | | |_) \ V /| |_) || | |  _| |_| | | |
+//   | |__| |_| |  __/ | | |  _ < | | |_| |  _  | | |
+//    \____\___/|_|    |_| |_| \_\___\____|_| |_| |_|
+//
+
+#desktop-footer-copyright{
+  color: @white;
+  background: @red;
+
+  padding-top: 14px;
+  padding-bottom: 11px;
+
+  p{
+    font-size: 11px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .copyright-column-01{
+    text-align: left;
+  }
+  .copyright-column-02{
+    text-align: right;
+  }
+
+  @media only screen and (max-width: 991px) {
+    p{
+      font-size: 9px;
+      line-height: 14px;
+      letter-spacing: 0.05em;
+    }
+
+  }
+  @media only screen and (max-width: 320px) {
+
+    .col-xs-8,
+    .col-xs-4{
+      display: block;
+      width: 100%;
+    }
+
+    .copyright-column-02{
+      text-align: left;
+    }
+  }
+
+}
+

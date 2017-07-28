@@ -1,0 +1,465 @@
+
+body.page-transaction-detail{
+  // overflow: hidden;
+  background: @off-white;
+}
+
+body.page-transaction-detail{
+  /*
+  #desktop-footer{
+    display: none;
+  }
+  #fullpage{
+    #desktop-footer{
+      display: block;
+    }
+  }
+  */
+}
+
+
+
+
+
+
+//    ____    _    _   _ _   _ _____ ____
+//   | __ )  / \  | \ | | \ | | ____|  _ \
+//   |  _ \ / _ \ |  \| |  \| |  _| | |_) |
+//   | |_) / ___ \| |\  | |\  | |___|  _ <
+//   |____/_/   \_\_| \_|_| \_|_____|_| \_\
+//
+
+
+#page-transaction-detail-banner-fullpage-section{
+  background: @off-white;
+}
+
+#page-transaction-detail-banner-section{
+  // padding-top: 190px;
+  // padding-top: 130px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 0px;
+    // padding-bottom: 38px;
+    padding-bottom: 0px;
+  }
+
+} // #page-transaction-detail-banner-section
+
+#page-transaction-detail-banner-image{
+
+  .manic-image-container{
+    height: 560px;
+
+    @media only screen and (max-width: 1280px) {
+      height: 460px;
+    }
+  }
+} // #page-transaction-detail-banner-image
+
+#page-transaction-detail-banner-image-mobile{
+  position: relative;
+  width: 100%;
+  height: 460px;
+
+  .manic-image-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  // MOBILE
+  @media only screen and (max-width: 767px) {
+    height: 255px;
+  }
+  @media only screen and (max-width: 320px) {
+    height: 220px;
+  }
+}
+
+//    ____  _____ _____  _    ___ _
+//   |  _ \| ____|_   _|/ \  |_ _| |
+//   | | | |  _|   | | / _ \  | || |
+//   | |_| | |___  | |/ ___ \ | || |___
+//   |____/|_____| |_/_/   \_\___|_____|
+//
+
+#page-transaction-detail-section{
+  // padding-bottom: 87px;
+  padding-bottom: 74px;
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-bottom: 50px;
+  }
+} // #page-transaction-detail-section
+
+
+#page-transaction-detail-content-mobile{
+  background: @off-white-2;
+  padding-top: 38px;
+}
+
+#page-transaction-detail-sidebar-mobile,
+#page-transaction-detail-sidebar{
+
+  // padding-top: 2px;
+  padding-top: 3px;
+
+  .page-default-title{
+    // margin-bottom: 48px;
+    margin-bottom: 36px;
+
+    h1{
+      font-size: 32px;
+      line-height: 40px;
+    }
+    h4 + h1{
+      padding-top: 8px;
+    }
+  }
+
+  .default-detail-item-container{
+    // padding-bottom: 16px;
+    padding-bottom: 9px;
+  }
+
+  .default-detail-item{
+    p{
+      white-space: nowrap;
+    }
+  }
+
+  // small laptop
+  @media only screen and (max-width: 1280px) {
+    .page-default-title{
+      margin-bottom: 36px * 0.9;
+
+      h1{
+        font-size: 32px * 0.9;
+        line-height: 40px * 0.9;
+      }
+      h4 + h1{
+        padding-top: 8px * 0.9;
+      }
+    }
+  } // small laptop
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 0px;
+
+    .page-default-title{
+      margin-bottom: 27px;
+
+      h1{
+        font-size: 24px;
+        line-height: 35px;
+        br{
+          display: none;
+        }
+      }
+      h4 + h1{
+        padding-top: 3px;
+      }
+    }
+    .default-detail-item-container{
+      padding-bottom: 21px;
+    }
+
+    .default-detail-item{
+      p{
+        white-space: normal;
+      }
+    }
+  }
+} // #page-transaction-detail-sidebar
+
+
+
+
+
+
+
+#page-transaction-detail-content{
+  padding-top: 40px;
+
+  /*
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 36px;
+    border-top: 1px solid @border-grey-2;
+  }
+  */
+ 
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 36px;
+  }
+
+}
+
+#page-transaction-detail-intro{
+  margin-bottom: 25px;
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    margin-bottom: 20px;
+  }
+
+  .default-copy{
+    p{
+      color: @off-black;
+      font-size: 18px;
+      line-height: 29px;
+    }
+    p + p{
+      padding-top: 29px;
+    }
+
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    .default-copy{
+      p{
+        font-size: 14px;
+        line-height: 22px;
+      }
+      p + p {
+        padding-top: 22px;
+      }
+    }
+  }
+} // #page-transaction-detail-intro
+
+
+#page-transaction-detail-copy{
+
+} // #page-transaction-detail-copy
+
+
+//    ____  _____ _        _  _____ _____ ____
+//   |  _ \| ____| |      / \|_   _| ____|  _ \
+//   | |_) |  _| | |     / _ \ | | |  _| | | | |
+//   |  _ <| |___| |___ / ___ \| | | |___| |_| |
+//   |_| \_\_____|_____/_/   \_\_| |_____|____/
+//
+
+
+#page-transaction-detail-related-fullpage-section{
+  background: @off-white-2;
+}
+
+#page-transaction-detail-related-section{
+  padding-top: 59px;
+  padding-bottom: 89px;
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 34px;
+    padding-bottom: 50px;
+
+  }
+} // #page-transaction-detail-related-section
+
+#page-transaction-detail-related-title{
+  text-align: center;
+
+  margin-bottom: 52px;
+
+  h2{
+    font-size: 32px;
+    line-height: 44px;
+
+    color: @off-black;
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+
+    margin-bottom: 28px;
+
+    h2{
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+
+} // #page-transaction-detail-related-title
+
+
+
+#page-transaction-detail-related-item-container{
+  .column-01{
+    padding-right: 7px;
+  }
+  .column-02{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .column-03{
+    padding-left: 7px;
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    .column-01{
+      padding-right: 0px;
+    }
+    .column-02{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .column-03{
+      padding-left: 0px;
+    }
+  }
+} // #page-transaction-detail-related-item-container
+
+
+//    ___ _____ _____ __  __
+//   |_ _|_   _| ____|  \/  |
+//    | |  | | |  _| | |\/| |
+//    | |  | | | |___| |  | |
+//   |___| |_| |_____|_|  |_|
+//
+
+.page-transaction-detail-related-item{
+
+  .related-item-image{
+    display: block;
+    // margin-bottom: 26px;
+    margin-bottom: 29px;
+
+    .opacity(1);
+    .transition-in(0.1s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.15s);
+
+    .manic-image-container{
+      height: 270px;
+
+      @media only screen and (max-width: 1199px) {
+        height: 220px;
+      }
+    }
+
+    &:hover,
+    &:focus{
+
+      .opacity(0.7);
+      .transition-in(0.2s, cubic-bezier(0.7,0,0.3,1), 0.13s);
+
+    }
+  }
+
+  .related-item-copy{
+    h3{
+      font-size: 20px;
+      line-height: 30px;
+
+      a{
+        font-size: 20px;
+        line-height: 30px;
+
+        color: @dark-grey;
+        .transition-in-single (color, 0.3s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.08s + 0.05s);
+
+        display: block;
+
+        &:hover,
+        &:focus{
+          color: @grey;
+          .transition-in-single (color, 0.2s, cubic-bezier(0.645, 0.045, 0.355, 1), 0.06s);
+        }
+      }
+    }
+    p{
+
+    }
+
+    h3 + p{
+      // padding-top: 7px;
+      padding-top: 4px;
+    }
+  }
+
+} // .page-transaction-detail-related-item
+
+
+
+.page-transaction-detail-related-item-cta-container{
+  padding-top: 14px;
+}
+
+
+//    ___ _____ _____ __  __   __  __  ___  ____ ___ _     _____
+//   |_ _|_   _| ____|  \/  | |  \/  |/ _ \| __ )_ _| |   | ____|
+//    | |  | | |  _| | |\/| | | |\/| | | | |  _ \| || |   |  _|
+//    | |  | | | |___| |  | | | |  | | |_| | |_) | || |___| |___
+//   |___| |_| |_____|_|  |_| |_|  |_|\___/|____/___|_____|_____|
+//
+
+.page-transaction-detail-related-item-mobile{
+
+  margin-bottom: 33px;
+
+  &:last-child{
+    margin-bottom: 0px;
+  }
+
+
+  .related-item-mobile-image{
+    display: block;
+    margin-bottom: 14px;
+
+    .manic-image-container{
+      height: 300px;
+
+      // MOBILE
+      @media only screen and (max-width: 767px) {
+        height: 260px;
+      }
+      @media only screen and (max-width: 320px) {
+        height: 210px;
+      }
+
+    }
+  }
+
+  .related-item-mobile-copy{
+
+    h3{
+      font-size: 18px;
+      line-height: 25px;
+      color: @dark-grey;
+
+      a{
+        font-size: 18px;
+        line-height: 25px;
+
+        color: @dark-grey;
+        // display: block;
+        .display-inline-block;
+      }
+    }
+    p{
+      position: relative;
+    }
+    h3 + p{
+      padding-top: 4px;
+    }
+
+    .cta-container{
+      padding-top: 14px;
+
+      // MOBILE
+      @media only screen and (max-width: 767px) {
+      }
+    }
+  }
+} // .page-transaction-detail-related-item-mobile
