@@ -160,8 +160,8 @@
       data-name="Antares Restaurant Group"
       data-image="images_cms/transaction/transaction-index-antares-restaurant-group.jpg"
       data-url="transaction-detail-antares-restaurant-group.php"
-      data-category=""
-      data-deal-type="">
+      data-category="consumer food-and-beverage"
+      data-deal-type="trade-sale">
     </div>
     
   </div> <!-- page-transaction-index-data-item-container -->

@@ -100,7 +100,7 @@
 
                       <div class="default-detail-item">
                         <h4>Industry</h4>
-                        <p>Consumers Products</p>
+                        <p>Consumer / F&B</p>
                       </div>
 
                     </div>
@@ -108,7 +108,7 @@
 
                       <div class="default-detail-item">
                         <h4>Transaction size</h4>
-                        <p>Undisclosed</p>
+                        <p>NZ$156m</p>
                       </div>
 
                     </div>
@@ -153,12 +153,12 @@
 
                     <div class="default-detail-item">
                       <h4>Industry</h4>
-                      <p>Consumers Products</p>
+                      <p>Consumer / F&B</p>
                     </div>
 
                     <div class="default-detail-item">
                       <h4>Transaction size</h4>
-                      <p>Undisclosed</p>
+                      <p>NZ$156m</p>
                     </div>
 
                     <div class="default-detail-item">
