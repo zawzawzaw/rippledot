@@ -28,12 +28,14 @@ body.page-transaction-index{
 
 #page-transaction-index-title-section{
   padding-top: 67px;
-  padding-bottom: 27px;
+  // padding-bottom: 27px;
+  padding-bottom: 37px;
 
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {
     padding-top: 40px;
-    padding-bottom: 25px;
+    //padding-bottom: 25px;
+    padding-bottom: 35px;
   }
 } // #page-transaction-index-title-section
 
@@ -41,12 +43,14 @@ body.page-transaction-index{
 #page-transaction-index-title{
 
   .page-default-title{
-    margin-bottom: 34px;
+    // margin-bottom: 34px;
   }
   
   .cta-container{
     position: relative;
     height: 25px;
+
+    display: none;
 
     .filter-btn{
       position: absolute;
@@ -246,6 +250,11 @@ body.page-transaction-index{
 
     margin-left: @transaction-index-filter-width + @transaction-index-filter-margin;
 
+    // TABLET LANDSCAPE
+    @media only screen and (max-width: 1024px) and (min-width: 992px) {
+      margin-left: @transaction-index-filter-width - 80px + @transaction-index-filter-margin;
+    }
+
     // -webkit-animation: filter_appear 0.3s both ease-out 0.25s;    // animation of the filter 
     .transition-in(0.3s, ease-out, 0.25s);
     
@@ -281,16 +290,54 @@ body.page-transaction-index{
 
 
 
+@media only screen and (max-width: 1280px) {
+  #page-transaction-index-item-container-container{
+    .page-transaction-index-item{
+      height: 280px + 90px;
+
+      .item-image{
+        height: 280px;
+      }
+
+    }
+  }
+  #page-transaction-index-item-container-container.open-version{
+    .page-transaction-index-item{
+      height: 200px + 90px;
+
+      .item-image{
+        height: 200px;
+      }
+
+    }
+  }
+}
 
 // TABLET LANDSCAPE
 @media only screen and (max-width: 1024px) and (min-width: 992px) {
-  #page-transaction-index-item-container-container,
-  #page-transaction-index-item-container-container.open-version{
+  #page-transaction-index-item-container-container{
     .page-transaction-index-item{
-      height: 320px;
+      height: 225px + 70px;
 
       .item-image{
-        height: 220px;
+        height: 225px;
+      }
+
+      h3{
+        font-size: 20px;
+        line-height: 26px;
+
+        padding-top: 12px;
+      }
+
+    }
+  }
+  #page-transaction-index-item-container-container.open-version{
+    .page-transaction-index-item{
+      height: 180px + 70px;
+
+      .item-image{
+        height: 180px;
       }
 
     }
@@ -315,6 +362,8 @@ body.page-transaction-index{
       h3{
         font-size: 20px;
         line-height: 26px;
+
+        padding-top: 22px;
 
         a{
           font-size: 20px;
@@ -443,6 +492,10 @@ body.page-transaction-index{
   -webkit-animation: filter_disappear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
   animation: filter_disappear 0.45s both cubic-bezier(0.7,0,0.3,1) 0.55s;
   
+
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    width: @transaction-index-filter-width - 80px + 20px;
+  }
 
 
   .manic-expand-container{
@@ -592,7 +645,13 @@ body.page-transaction-index{
   &.open-version{
     margin-left: @transaction-index-filter-width + @transaction-index-filter-margin;
     .transition-in(0.3s, ease-out, 0.25s);
+
+    // TABLET LANDSCAPE
+    @media only screen and (max-width: 1024px) and (min-width: 992px) {
+      margin-left: @transaction-index-filter-width - 80px + @transaction-index-filter-margin;
+    }
   }
+
 }
 
 
@@ -627,7 +686,14 @@ body.page-transaction-index{
   &.open-version{
     margin-left: @transaction-index-filter-width + @transaction-index-filter-margin;
     .transition-in(0.3s, ease-out, 0.25s);
+
+    // TABLET LANDSCAPE
+    @media only screen and (max-width: 1024px) and (min-width: 992px) {
+      margin-left: @transaction-index-filter-width - 80px + @transaction-index-filter-margin;
+    }
   }
+
+
 }
 
 

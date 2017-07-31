@@ -1,6 +1,7 @@
 java -jar "compiler.jar" ^
   --js=..\..\js\manic-polyfill.js ^
   --js=..\jquery-other\jquery-1.9.1.min.js ^
+  --js=..\jquery-other\jquery.mousewheel.min.js ^
   --js=..\misc-js\mobile-detect.js ^
   --js=..\misc-js\preloadjs-0.4.0.min.js ^
   --js=..\gsap\src\minified\TweenMax.min.js ^
@@ -11,8 +12,8 @@ java -jar "compiler.jar" ^
   --js=..\scrollmagic\scrollmagic\minified\plugins\animation.gsap.min.js ^
   --js=..\scrollmagic\scrollmagic\minified\plugins\debug.addIndicators.min.js ^
   --js=..\slick-carousel\slick\slick.min.js ^
-  --js=..\fullpage-js\vendors\scrolloverflow.min.js ^
-  --js=..\fullpage-js\jquery.fullpage.min.js ^
-  --js=..\odometer\odometer.min.js ^
+  --js=..\jquery-fileupload\vendor\jquery.ui.widget.js ^
+  --js=..\jquery-fileupload\jquery.iframe-transport.js ^
+  --js=..\jquery-fileupload\jquery.fileupload.js ^
   --compilation_level WHITESPACE_ONLY ^
-  --js_output_file=..\..\js\minified\page-home-libraries.min.js
+  --js_output_file=..\..\js\minified\libraries-contact.min.js

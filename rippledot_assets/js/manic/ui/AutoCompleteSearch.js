@@ -46,7 +46,7 @@ manic.ui.AutoCompleteSearch = function(options, element) {
   
 
 
-  console.log('manic.ui.AutoCompleteSearch: init');
+  // console.log('manic.ui.AutoCompleteSearch: init');
 };
 goog.inherits(manic.ui.AutoCompleteSearch, goog.events.EventTarget);
 
@@ -62,19 +62,6 @@ manic.ui.AutoCompleteSearch.DEFAULT = {
   'custom_placeholer': 'Search'
 };
 
-/**
- * CLASSNAME Event Constant
- * @const
- * @type {string}
- */
-manic.ui.AutoCompleteSearch.EVENT_01 = '';
-
-/**
- * CLASSNAME Event Constant
- * @const
- * @type {string}
- */
-manic.ui.AutoCompleteSearch.EVENT_02 = '';
 
 
 //    ____  ____  _____     ___  _____ _____
@@ -110,6 +97,7 @@ manic.ui.AutoCompleteSearch.prototype.create_autocomplete = function(){
   goog.events.listen(this.ac, goog.ui.ac.AutoComplete.EventType.SELECT, this.on_autocomplete_select.bind(this));
 
   this.ac_renderer = this.ac.getRenderer();
+  // this.ac_renderer.className = this.options['unique_name']; //   'ac-renderer-desktop-aside-search';
   this.ac_renderer.className = this.options['unique_name']; //   'ac-renderer-desktop-aside-search';
   
 };

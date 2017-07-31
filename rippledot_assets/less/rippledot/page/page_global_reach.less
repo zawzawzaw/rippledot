@@ -10,34 +10,30 @@
 
   position: relative;
 
-  padding-top: 69px;
+  // padding-top: 69px;
+  padding-top: 59px;
   padding-bottom: 99px;
 
   background: @off-white;
 
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    // padding-top: 0px;
+    // padding-bottom: 0px;
+
+    padding-top: 39px;
+    padding-bottom: 50px;
   }
 
 } // #page-global-reach-content-section
 
-#page-global-reach-content-image-mobile{
-  padding-top: 20px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 40px;
 
-  // MOBILE
-  @media only screen and (max-width: 767px) {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 30px;
-  }
 
-} // #page-global-reach-content-image-mobile
+
+
+
+
+
 
 
 
@@ -56,11 +52,13 @@
 
 
 #page-global-reach-content-title{
-  margin-bottom: 23px;
+  // margin-bottom: 23px;
+  margin-bottom: 45px;
 
   // small laptop
   @media only screen and (max-width: 1280px) {
-    margin-bottom: 23px * 0.9;
+    // margin-bottom: 23px * 0.9;
+    margin-bottom: 45px * 0.9;
   }
 
   // TABLET PORTRAIT
@@ -70,18 +68,59 @@
 
 } // #page-global-reach-content-title
 
+
+
+#page-global-reach-content-image{
+  position: relative;
+  padding-top: 17px;
+  // margin-left: -40px;
+
+  // small laptop
+  @media only screen and (max-width: 1280px) {
+    padding-top: 17px * 0.9;
+    // margin-left: -40px * 0.9;
+  }
+
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    // margin-left: -20px;
+  }
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+    padding-top: 0px;
+    // margin-left: 0px;
+  }
+
+} // #page-global-reach-content-image
+
+
+
+
 #page-global-reach-content-intro{
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+
+
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
 
   .default-copy{
     p{
-      color: @off-black;
-      font-size: 17px;
-      line-height: 29px;
+      // color: @off-black;
+      // font-size: 17px;
+      // line-height: 29px;
+
+      .h3-style;
+      font-size: 20px;
+      line-height: 30px;
+      color: @dark-grey;
     }
 
     p + p{
-      padding-top: 29px;
+      // padding-top: 29px;
+      padding-top: 30px;
     }
   }
 
@@ -89,11 +128,15 @@
   @media only screen and (max-width: 1280px) {
     .default-copy{
       p{
-        font-size: 17px* 0.9;
-        line-height: 29px* 0.9;
+        // font-size: 17px * 0.9;
+        // line-height: 29px * 0.9;
+
+        font-size: 20px * 0.9;
+        line-height: 30px * 0.9;
       }
       p + p{
-        padding-top: 29px* 0.9;
+        // padding-top: 29px* 0.9;
+        padding-top: 30px * 0.9;
       }
     }
      
@@ -106,8 +149,11 @@
     
     .default-copy{
       p{
-        font-size: 14px;
-        line-height: 22px;
+        // font-size: 14px;
+        // line-height: 22px;
+
+        font-size: 16px;
+        line-height: 25px;
       }
       p + p {
         padding-top: 22px;
@@ -118,58 +164,66 @@
 } // #page-global-reach-content-intro
 
 
-#page-global-reach-content-copy{
+
+
+
+
+//    __  __  ___  ____ ___ _     _____
+//   |  \/  |/ _ \| __ )_ _| |   | ____|
+//   | |\/| | | | |  _ \| || |   |  _|
+//   | |  | | |_| | |_) | || |___| |___
+//   |_|  |_|\___/|____/___|_____|_____|
+//
+
+
+
+#page-global-reach-content-image-mobile{
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  // margin-bottom: 40px;
+  // 
+  position: relative;
+
+  // MOBILE
+  @media only screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // margin-bottom: 30px;
+  }
+
+} // #page-global-reach-content-image-mobile
+
+
+
+
+#page-global-reach-content-intro-mobile{
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
 
   .default-copy{
-    margin-bottom: 33px;
-  }
-
-  .cta-container{
-    
-  }
-
-
-  // small laptop
-  @media only screen and (max-width: 1280px) {
-    .default-copy{
-      margin-bottom: 33px * 0.9;
+    p{
+      font-size: 16px;
+      line-height: 25px;
+      color: @off-black;
     }
-  }
-  // TABLET PORTRAIT
-  @media only screen and (max-width: 991px) {
-    .default-copy{
-      margin-bottom: 0px;
+    p + p{
+      padding-top: 25px;
     }
   }
 
-} // #page-global-reach-content-copy
+  // MOBILE
+  @media only screen and (max-width: 767px) {
 
+    text-align: center;
 
+    padding-top: 30px;
 
-
-
-#page-global-reach-content-image{
-
-  padding-top: 17px;
-  margin-left: -40px;
-
-  // small laptop
-  @media only screen and (max-width: 1280px) {
-    padding-top: 17px * 0.9;
-    margin-left: -40px * 0.9;
+    position: relative;
+    bottom: auto;
   }
 
-  // TABLET LANDSCAPE
-  @media only screen and (max-width: 1024px) and (min-width: 992px) {
-    margin-left: -20px;
-  }
-
-  // TABLET PORTRAIT
-  @media only screen and (max-width: 991px) {
-    padding-top: 0px;
-    margin-left: 0px;
-  }
-
-} // #page-global-reach-content-image
-
-
+}

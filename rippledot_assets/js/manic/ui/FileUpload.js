@@ -40,19 +40,19 @@ manic.ui.FileUpload = function(options, element) {
 
 
   this.input_element.fileupload({
-    'acceptFileTypes': /(\.|\/)(doc|docx|pages|pdf)$/i,
+    'acceptFileTypes': /(\.|\/)(doc|docx|pdf)$/i,
     'url': this.url,
     'dataType': 'json'
   });
 
 
   this.input_element.bind('fileuploaddone', function(event,data){
-    console.log('fileuploaddone');
-    console.log(data);
+    //console.log('fileuploaddone');
+    //console.log(data);
 
     this.hide_preloader();
 
-    var arr = data.result.files;
+    var arr = data['result']['files'];
     var item = null;
     var filename = '';
     var fileurl = '';
@@ -100,7 +100,7 @@ manic.ui.FileUpload = function(options, element) {
       this.hide_error();
 
       // get and display name of file uploaded
-      arr = data.files;
+      arr = data['files'];
 
       for (var i = 0, l=arr.length; i < l; i++) {
         item = arr[i];
@@ -119,7 +119,7 @@ manic.ui.FileUpload = function(options, element) {
 
   this.input_element.bind('fileuploadprocessfail', function(event,data){
 
-    console.log('fileuploadprocessfail');
+    // console.log('fileuploadprocessfail');
 
     /*
 
@@ -131,18 +131,18 @@ manic.ui.FileUpload = function(options, element) {
   }.bind(this));
 
   this.input_element.bind('fileuploadstart', function(event,data){
-    console.log('fileuploadstart');
+    // console.log('fileuploadstart');
 
     this.show_preloader();
 
   }.bind(this));
 
   this.input_element.bind('fileuploadprogressall', function(event,data){
-    console.log('fileuploadprogressall');
-    console.log(data);
+    // console.log('fileuploadprogressall');
+    // console.log(data);
 
-    var progress = parseInt(data.loaded / data.total * 100, 10);
-    console.log('progress: ' + progress);
+    var progress = parseInt(data['loaded'] / data['total'] * 100, 10);
+    // console.log('progress: ' + progress);
 
     this.set_preloader_progress(progress);
 

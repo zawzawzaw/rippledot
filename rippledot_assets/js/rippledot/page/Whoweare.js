@@ -27,7 +27,7 @@ rippledot.page.Whoweare = function(options, element) {
 
 
 
-  console.log('rippledot.page.Whoweare: init');
+  // console.log('rippledot.page.Whoweare: init');
 };
 goog.inherits(rippledot.page.Whoweare, rippledot.page.Default);
 
@@ -150,32 +150,6 @@ rippledot.page.Whoweare.prototype.set_press_release_year = function(str_param) {
 
 };
 
-
-
-//    _______     _______ _   _ _____ ____
-//   | ____\ \   / / ____| \ | |_   _/ ___|
-//   |  _|  \ \ / /|  _| |  \| | | | \___ \
-//   | |___  \ V / | |___| |\  | | |  ___) |
-//   |_____|  \_/  |_____|_| \_| |_| |____/
-//
-
-
-/**
- * @param {object} event
- */
-rippledot.page.Whoweare.prototype.on_event_handler_02 = function(event) {
-};
-
-
-
-rippledot.page.Whoweare.prototype.sample_method_calls = function() {
-
-  // sample override
-  rippledot.page.Whoweare.superClass_.method_02.call(this);
-
-  // sample event
-  this.dispatchEvent(new goog.events.Event(rippledot.page.Whoweare.EVENT_01));
-};
 
 
 

@@ -1,6 +1,9 @@
-call compile_page_libraries.bat
-call compile_page_home_libraries.bat
+call compile_libraries_default.bat
+call compile_libraries_home.bat
+call compile_libraries_contact.bat
 call compile_page_default.bat
 call compile_page_home.bat
-call compile_page_people.bat
+call compile_page_whoweare.bat
 call compile_page_transaction.bat
+call compile_page_people.bat
+call compile_page_contact.bat

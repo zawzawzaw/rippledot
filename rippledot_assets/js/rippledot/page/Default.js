@@ -118,12 +118,6 @@ goog.inherits(rippledot.page.Default, manic.page.Page);
 rippledot.page.Default.DEFAULT = {
 };
 
-/**
- * CLASSNAME Event Constant
- * @const
- * @type {string}
- */
-rippledot.page.Default.EVENT_01 = '';
 
 //    ___ _   _ ___ _____
 //   |_ _| \ | |_ _|_   _|

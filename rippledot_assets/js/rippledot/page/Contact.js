@@ -47,7 +47,7 @@ rippledot.page.Contact = function(options, element) {
    */
   this.contact_map_mobile = null;
 
-  console.log('rippledot.page.Contact: init');
+  // console.log('rippledot.page.Contact: init');
 };
 goog.inherits(rippledot.page.Contact, rippledot.page.Default);
 
@@ -147,40 +147,6 @@ rippledot.page.Contact.prototype.private_method_02 = function() {};
 
 
 
-
-/**
- * @param {String} str_param
- */
-rippledot.page.Contact.prototype.set_press_release_year = function(str_param) {
-
-};
-
-
-
-//    _______     _______ _   _ _____ ____
-//   | ____\ \   / / ____| \ | |_   _/ ___|
-//   |  _|  \ \ / /|  _| |  \| | | | \___ \
-//   | |___  \ V / | |___| |\  | | |  ___) |
-//   |_____|  \_/  |_____|_| \_| |_| |____/
-//
-
-
-/**
- * @param {object} event
- */
-rippledot.page.Contact.prototype.on_event_handler_02 = function(event) {
-};
-
-
-
-rippledot.page.Contact.prototype.sample_method_calls = function() {
-
-  // sample override
-  rippledot.page.Contact.superClass_.method_02.call(this);
-
-  // sample event
-  this.dispatchEvent(new goog.events.Event(rippledot.page.Contact.EVENT_01));
-};
 
 
 

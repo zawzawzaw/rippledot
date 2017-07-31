@@ -206,7 +206,7 @@
                   <ul>
                     <li><a href="careers.php">Working at rippledot</a></li>
                     <li><a href="professionals.php">Professionals</a></li>
-                    <li><a href="javascript:void(0);">Students & graduates</a></li>
+                    <li><a href="students-and-graduates.php">Students & graduates</a></li>
                   </ul>
                 </li>
                 <li><a href="contact-us.php">Contact</a></li>
@@ -231,8 +231,8 @@
           <div class="col-sm-10 col-xs-12">
             
             <ul>
-              <li><a href="javascript:void(0);">Terms of use</a></li>
-              <li><a href="javascript:void(0);">Privacy policy</a></li>
+              <li><a href="legal.php">Legal</a></li>
+              <!-- <li><a href="javascript:void(0);">Privacy policy</a></li> -->
             </ul>
 
           </div>
@@ -269,29 +269,17 @@
               <nav>
                 <ul>
 
-                  <?php if ($current_page == "transaction-detail-page" || 
-                          $current_page == "transaction-index-page"): ?>
-
-                    <li><a href="what-we-do.php">What we do</a></li>
-                    <li><a href="rippledot-difference.php">The rippledot difference</a></li>
-                    <li class="selected"><a href="transaction-index.php">Transactions</a></li>
-
-                  <?php elseif($current_page == "what-we-do-page"): ?>
-
-                    <li class="selected"><a href="what-we-do.php">What we do</a></li>
-                    <li><a href="rippledot-difference.php">The rippledot difference</a></li>
-                    <li><a href="transaction-index.php">Transactions</a></li>
-
-                  <?php elseif($current_page == "rippledot-difference-page"): ?>
-                    
-                    <li><a href="what-we-do.php">What we do</a></li>
-                    <li class="selected"><a href="rippledot-difference.php">The rippledot difference</a></li>
-                    <li><a href="transaction-index.php">Transactions</a></li>
-
-                  <?php elseif($current_page == "profile-page"): ?>
+                  <?php if($current_page == "profile-page"): ?>
 
                     <li class="selected"><a href="profile.php">Profile</a></li>
                     <li><a href="principles-and-values.php">Principles & Values</a></li>
+                    <li><a href="global-reach.php">Global Reach</a></li>
+                    <li><a href="press-release.php">Press Releases</a></li>
+
+                  <?php elseif($current_page == "principles-and-values-page"): ?>
+
+                    <li><a href="profile.php">Profile</a></li>
+                    <li class="selected"><a href="principles-and-values.php">Principles & Values</a></li>
                     <li><a href="global-reach.php">Global Reach</a></li>
                     <li><a href="press-release.php">Press Releases</a></li>
 
@@ -309,12 +297,32 @@
                     <li><a href="global-reach.php">Global Reach</a></li>
                     <li class="selected"><a href="press-release.php">Press Releases</a></li>
 
-                  <?php elseif($current_page == "principles-and-values-page"): ?>
 
-                    <li><a href="profile.php">Profile</a></li>
-                    <li class="selected"><a href="principles-and-values.php">Principles & Values</a></li>
-                    <li><a href="global-reach.php">Global Reach</a></li>
-                    <li><a href="press-release.php">Press Releases</a></li>
+
+
+
+                  <?php elseif($current_page == "what-we-do-page"): ?>
+
+                    <li class="selected"><a href="what-we-do.php">What we do</a></li>
+                    <li><a href="rippledot-difference.php">The rippledot difference</a></li>
+                    <li><a href="transaction-index.php">Transactions</a></li>
+
+                  <?php elseif($current_page == "rippledot-difference-page"): ?>
+                    
+                    <li><a href="what-we-do.php">What we do</a></li>
+                    <li class="selected"><a href="rippledot-difference.php">The rippledot difference</a></li>
+                    <li><a href="transaction-index.php">Transactions</a></li>  
+
+                  <?php elseif( $current_page == "transaction-detail-page" || 
+                                $current_page == "transaction-index-page"): ?>
+
+                    <li><a href="what-we-do.php">What we do</a></li>
+                    <li><a href="rippledot-difference.php">The rippledot difference</a></li>
+                    <li class="selected"><a href="transaction-index.php">Transactions</a></li>
+
+                    
+                    
+
 
                   <?php elseif($current_page == "careers-page"): ?>
 
@@ -399,8 +407,11 @@
 
     <div id="desktop-aside-links">
       <ul>
+        <li><a href="legal.php">Legal</a></li>
+        <!-- 
         <li><a href="javascript:void(0);">Terms of use</a></li>
         <li><a href="javascript:void(0);">Privacy policy</a></li>
+        -->
       </ul>
     </div>
 

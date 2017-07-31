@@ -32,7 +32,8 @@ body.page-contact-us{
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {
     padding-top: 0px;
-    padding-bottom: 0px;
+    // padding-bottom: 0px;
+    padding-bottom: 50px;
 
   }
 
@@ -42,12 +43,13 @@ body.page-contact-us{
 
 
 #page-contact-us-title {
-  margin-bottom: 23px;
+  // margin-bottom: 23px;
+  margin-bottom: 50px;
 
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {
     padding-top: 39px;
-
+    margin-bottom: 28px;
   }
 } // page-contact-us-title
 
@@ -193,7 +195,20 @@ body.page-contact-us{
 
 #page-contact-us-map{
   display: block;
-  height: 323px;
+  // height: 323px;
+  height: 460px;
+
+  // small laptop
+  @media only screen and (max-width: 1280px) {
+    height: 410px;
+  }
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    height: 380px;
+  }
+
+
+
 } // #page-contact-us-map
 
 
@@ -227,7 +242,8 @@ body.page-contact-us{
 
 #page-contact-us-detail{
 
-  padding-top: 37px;
+  // padding-top: 37px;
+  padding-top: 46px;
 
   h3{
     // .clan-pro-bold;
@@ -317,6 +333,8 @@ body.page-contact-us{
   }
 
   @media only screen and (max-width: 991px) {
+    padding-top: 0px;
+
     p{
       font-size: 13px;
       line-height: 20px;

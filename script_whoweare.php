@@ -90,7 +90,7 @@
     <script type="text/javascript" src="rippledot_assets/js/minified/head.load.min.js"></script>
     <script type="text/javascript">
 
-      var PAGE_LIBRARY        = "rippledot_assets/js/minified/page-libraries.min.js";
+      var PAGE_LIBRARY        = "rippledot_assets/js/minified/libraries-default.min.js";
       var PAGE_JS             = "rippledot_assets/js/minified/page-whoweare.min.js";
       var PAGE_CSS            = "rippledot_assets/css/style.css";
       

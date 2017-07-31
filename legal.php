@@ -114,6 +114,6 @@
     
   <?php include "footer.php"; ?>
   <?php include "sidebar.php"; ?>
-  <?php include "script_people.php" ?>
+  <?php include "script.php" ?>
 </body>
 </html>

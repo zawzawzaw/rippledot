@@ -28,10 +28,9 @@
                 </ul>
 
                 <ul>
-                  <li><a href="javascript:void(0);">careers</a></li>
+                  <li><a href="careers.php">careers</a></li>
                   <li><a href="contact-us.php">Contact us</a></li>
-                  <li><a href="javascript:void(0);">Privacy policy</a></li>
-                  <li><a href="javascript:void(0);">Terms of use</a></li>
+                  <li><a href="legal.php">Legal</a></li>
                 </ul>
               </nav>
             </div> <!-- desktop-footer-link-container -->

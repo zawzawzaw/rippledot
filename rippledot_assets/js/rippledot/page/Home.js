@@ -110,7 +110,7 @@ rippledot.page.Home.prototype.init = function() {
   }
 
 
-
+  this.create_odometer();
   this.create_infographic();
   
 };
@@ -162,7 +162,23 @@ rippledot.page.Home.prototype.create_fullpage = function() {
 };
 
 
+rippledot.page.Home.prototype.create_odometer = function(){
 
+  var arr = $('.odometer');
+  var item = null;
+  var temp_odometer = null;
+
+  for (var i = 0, l=arr.length; i < l; i++) {
+    // item = $(arr[i]);
+    item = arr[i];
+
+    temp_odometer = new Odometer({
+      'el': item
+    });
+
+  }
+
+};
 
 
 rippledot.page.Home.prototype.create_infographic = function() {
@@ -171,7 +187,7 @@ rippledot.page.Home.prototype.create_infographic = function() {
   this.graph_canvas_02  = new rippledot.component.HomeCircleGraph({}, $('#page-home-infographic-canvas-02'));
   this.graph_canvas_03  = new rippledot.component.HomeCircleGraph({}, $('#page-home-infographic-canvas-03'));
 
-  console.log('manic.IS_MOBILE: ' + manic.IS_MOBILE);
+  // console.log('manic.IS_MOBILE: ' + manic.IS_MOBILE);
 
   if (manic.IS_MOBILE == true) {
 
@@ -208,7 +224,7 @@ rippledot.page.Home.prototype.animate_in_map = function() {
 };
 rippledot.page.Home.prototype.animate_in_graph = function() {
 
-  console.log('animate_in_graph');
+  // console.log('animate_in_graph');
 
   if (this.graph_canvas_01 == null) {
 
@@ -320,12 +336,22 @@ rippledot.page.Home.prototype.on_fullpage_section_load = function(anchorLink, in
       TweenMax.to(this.expanded_logo, 0.5, {autoAlpha:0});
       break;
 
+    case 'targeted-approach':
+      this.desktop_header.show_bg();
+      TweenMax.delayedCall(0.3, this.desktop_sidebar.change_color, ['normal'], this.desktop_sidebar);
+      this.desktop_sidebar.set_selected(1);
+
+      this.animate_in_graph();
+
+      this.logo_container.removeClass('full-version')
+      TweenMax.to(this.logo, 0.5, {autoAlpha:1});
+      TweenMax.to(this.expanded_logo, 0.5, {autoAlpha:0});
+      break;
+
     case 'our-people':
       this.desktop_header.show_bg();
       TweenMax.delayedCall(0.3, this.desktop_sidebar.change_color, ['normal'], this.desktop_sidebar);
       this.desktop_sidebar.set_selected(2);
-
-      this.animate_in_graph();
 
       this.logo_container.removeClass('full-version')
       TweenMax.to(this.logo, 0.5, {autoAlpha:1});

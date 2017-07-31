@@ -50,7 +50,12 @@
 
                   <div id="page-home-banner-copy">
                     <h1>Rippledot Capital</h1>
-                    <h4>A consultant based approach <br class="visible-xs">to M & A drives our success</h4>
+
+                    <!-- old tag line -->
+                    <!-- <h4>A consultant based approach <br class="visible-xs">to M & A drives our success</h4> -->
+
+                    <h4>Connecting Enterprise to Capital</h4>
+
                   </div> <!-- page-home-banner-copy -->
 
 
@@ -638,8 +643,10 @@
       </article> <!-- page-home-expertise-section -->
       
     </div> <!-- fullpage-section -->
-    <div class="fullpage-section" data-anchor="our-people">
-      
+
+
+
+    <div class="fullpage-section" data-anchor="targeted-approach" id="page-home-infographic-fullpage-section">
 
       <!--
          ___ _   _ _____ ___   ____ ____      _    ____  _   _ ___ ____
@@ -654,86 +661,102 @@
 
         <div class="desktop-header-spacer"></div>
 
-        <div class="container-fluid has-breakpoint">
-          <div class="row">
-            <div class="col-md-12 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+        <div id="page-home-infographic-center-container">
+          <div id="page-home-infographic-center">
+            
 
-              <div id="page-home-infographic-title">
-                <h2>Our targeted approach achieves results</h2>
-              </div> <!-- page-home-infographic-title -->
+            <div class="container-fluid has-breakpoint">
+              <div class="row">
+                <div class="col-md-12 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
 
-            </div>
-          </div> <!-- row -->
+                  <div id="page-home-infographic-title">
+                    <h2>Our targeted approach achieves results</h2>
+                  </div> <!-- page-home-infographic-title -->
 
-          <div class="row">
-            <div class="col-md-6 col-md-push-3">
+                </div>
+              </div> <!-- row -->
 
-
-
-
-
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-
-              <div id="page-home-infographic-container">
+              <div class="row">
+                <div class="col-md-6 col-md-push-3">
 
 
 
-                <div id="page-home-infographic-01">
-                  
-                  <div id="page-home-infographic-canvas-01" class="page-home-infographic-canvas" data-rotation="-55" data-percent="0.7" data-odometer-value="2000">
-                    <div class="raphael-container"></div>
 
-                    <div class="page-home-infographic-copy">
-                      <h3><span class="odometer">0</span></h3>
-                      <p>Average amount of <br>hours per deal</p>
-                    </div>
-                  </div>
 
-                </div> <!-- page-home-infographic-01 -->
+                </div>
+              </div>
 
-                <div id="page-home-infographic-02">
+              <div class="row">
+                <div class="col-md-12">
 
-                  <div id="page-home-infographic-canvas-02" class="page-home-infographic-canvas" data-rotation="0" data-percent="0.75" data-odometer-value="5.0">
-                    <div class="raphael-container"></div>
+                  <div id="page-home-infographic-container">
+
+
+
+                    <div id="page-home-infographic-01">
+                      
+                      <div id="page-home-infographic-canvas-01" class="page-home-infographic-canvas" data-rotation="-55" data-percent="0.7" data-odometer-value="2000">
+                        <div class="raphael-container"></div>
+
+                        <div class="page-home-infographic-copy">
+                          <h3><span class="odometer">0</span></h3>
+                          <p>Average amount of <br>hours per deal</p>
+                        </div>
+                      </div>
+
+                    </div> <!-- page-home-infographic-01 -->
+
+                    <div id="page-home-infographic-02">
+
+                      <div id="page-home-infographic-canvas-02" class="page-home-infographic-canvas" data-rotation="0" data-percent="0.75" data-odometer-value="5.0">
+                        <div class="raphael-container"></div>
+                        
+                        <div class="page-home-infographic-copy">
+                          <h3>$<span class="odometer">0.0</span> billion</h3>
+                          <p>Transaction capital</p>
+                          <small>Whole figure of every <br>deal combined</small>
+                        </div>
+                      </div>
+
+                    </div> <!-- page-home-infographic-02 -->
+
+
+                    <div id="page-home-infographic-03">
+                      
+                      <div id="page-home-infographic-canvas-03" class="page-home-infographic-canvas" data-rotation="90" data-percent="0.8" data-odometer-value="4">
+                        <div class="raphael-container"></div>
+                        
+                        <div class="page-home-infographic-copy one-liner-version">
+                          <h3><span class="odometer">0</span>:5</h3>
+                          <p>Win ratio</p>
+                        </div>
+                      </div>
+
+                    </div> <!-- page-home-infographic-03 -->
                     
-                    <div class="page-home-infographic-copy">
-                      <h3>$<span class="odometer">0.0</span> billion</h3>
-                      <p>Transaction capital</p>
-                      <small>Whole figure of every <br>deal combined</small>
-                    </div>
-                  </div>
-
-                </div> <!-- page-home-infographic-02 -->
-
-
-                <div id="page-home-infographic-03">
-                  
-                  <div id="page-home-infographic-canvas-03" class="page-home-infographic-canvas" data-rotation="90" data-percent="0.8" data-odometer-value="4">
-                    <div class="raphael-container"></div>
                     
-                    <div class="page-home-infographic-copy one-liner-version">
-                      <h3><span class="odometer">0</span>:5</h3>
-                      <p>Win ratio</p>
-                    </div>
-                  </div>
-
-                </div> <!-- page-home-infographic-03 -->
-                
-                
-              </div> <!-- page-home-infographic-container -->
+                  </div> <!-- page-home-infographic-container -->
 
 
 
-            </div>
-          </div>
+                </div>
+              </div> <!-- row -->
 
 
-        </div>
+            </div> <!-- container-fluid -->
+
+
+          </div> <!-- page-home-infographic-center -->
+        </div> <!-- page-home-infographic-center-container -->
+
       </article> <!-- page-home-infographic-section -->
+      
+
+    </div> <!-- fullpage-section -->
+
+    <div class="fullpage-section" data-anchor="our-people">
+      
+
 
 
 
@@ -747,6 +770,9 @@
       -->
 
       <article id="page-home-people-section">
+
+        <div class="desktop-header-spacer"></div>
+
         <div class="container-fluid has-breakpoint">
 
           <div class="row">

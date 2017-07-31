@@ -55,10 +55,6 @@
     <script type="text/javascript" src="rippledot_assets/libs/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
     <script type="text/javascript" src="rippledot_assets/libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="rippledot_assets/libs/slick-carousel/slick/slick.min.js"></script>
-
-    <!-- fullPage.js -->
-    <script type="text/javascript" src="rippledot_assets/libs/fullpage-js/vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="rippledot_assets/libs/fullpage-js/jquery.fullpage.min.js"></script>
     
     <!-- Google Closure -->
     <script type="text/javascript" src="rippledot_assets/libs/google-closure/closure-library/closure/goog/base.js"></script>
@@ -86,7 +82,7 @@
     <script type="text/javascript" src="rippledot_assets/js/minified/head.load.min.js"></script>
     <script type="text/javascript">
 
-      var PAGE_LIBRARY        = "rippledot_assets/js/minified/page-libraries.min.js";
+      var PAGE_LIBRARY        = "rippledot_assets/js/minified/libraries-default.min.js";
       var PAGE_JS             = "rippledot_assets/js/minified/page-default.min.js";
       var PAGE_CSS            = "rippledot_assets/css/style.css";
       

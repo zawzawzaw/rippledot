@@ -92,7 +92,7 @@ class UploadHandler
 
             // Defines which files (based on their names) are accepted for upload:
             // 'accept_file_types' => '/.+$/i',
-            'accept_file_types' => '/\.(doc|docx|pages|pdf)$/i',
+            'accept_file_types' => '/\.(doc|docx|pdf)$/i',
             
 
             // The php.ini settings upload_max_filesize and post_max_size

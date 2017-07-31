@@ -56,10 +56,6 @@
     <script type="text/javascript" src="rippledot_assets/libs/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
     <script type="text/javascript" src="rippledot_assets/libs/slick-carousel/slick/slick.min.js"></script>
 
-    <!-- fullPage.js -->
-    <script type="text/javascript" src="rippledot_assets/libs/fullpage-js/vendors/scrolloverflow.min.js"></script>
-    <script type="text/javascript" src="rippledot_assets/libs/fullpage-js/jquery.fullpage.min.js"></script>
-
     <!-- jQuery FileUpload -->
     <script type="text/javascript" src="rippledot_assets/libs/jquery-fileupload/vendor/jquery.ui.widget.js"></script>
     <script type="text/javascript" src="rippledot_assets/libs/jquery-fileupload/jquery.iframe-transport.js"></script>
@@ -94,8 +90,8 @@
     <script type="text/javascript" src="rippledot_assets/js/minified/head.load.min.js"></script>
     <script type="text/javascript">
 
-      var PAGE_LIBRARY        = "rippledot_assets/js/minified/page-libraries.min.js";
-      var PAGE_JS             = "rippledot_assets/js/minified/page-default.min.js";
+      var PAGE_LIBRARY        = "rippledot_assets/js/minified/libraries-contact.min.js";
+      var PAGE_JS             = "rippledot_assets/js/minified/page-contact.min.js";
       var PAGE_CSS            = "rippledot_assets/css/style.css";
       var PAGE_GOOGLEMAP_JS = "https://maps.googleapis.com/maps/api/js?key=AIzaSyC2SOmCXdM5TEYYk81BFxiFwJZ_Z56moYo&v=3.exp";
       

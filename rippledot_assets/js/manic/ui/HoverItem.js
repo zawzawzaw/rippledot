@@ -81,7 +81,7 @@ manic.ui.HoverItem = function(options, element) {
   this.element.mouseenter(this.on_element_mouseenter);
   this.element.mouseleave(this.on_element_mouseleave);
 
-  console.log('manic.ui.HoverItem: init');
+  // console.log('manic.ui.HoverItem: init');
 };
 
 

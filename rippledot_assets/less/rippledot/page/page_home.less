@@ -1038,6 +1038,11 @@ body.is-ie{
 //   |___|_| \_|_|   \___/ \____|_| \_\/_/   \_\_|   |_| |_|___\____|
 //
 
+
+#page-home-infographic-fullpage-section{
+  background: @off-white-2;
+}
+
 #page-home-infographic-section{
   background: @off-white-2;
   // #eae8e5
@@ -1045,11 +1050,21 @@ body.is-ie{
   // padding-top: 85px + 60px;     // add a bit for the header
   /// padding-top: 85px;     // 
   
-  padding-top: 81px;
-  padding-bottom: 93px;
+  //// padding-top: 81px;
+  //// padding-bottom: 93px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {
+
+    position: relative;
+    width: auto;
+    height: auto;
 
     padding-top: 30px;
     // padding-bottom: 50px;
@@ -1057,6 +1072,40 @@ body.is-ie{
 
   }
 }
+
+
+#page-home-infographic-center-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+
+  display: table;
+
+  // TABLET PORTRAIT
+  @media only screen and (max-width: 991px) {
+
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+#page-home-infographic-center{
+  display: table-cell;
+  vertical-align: middle;
+
+  // TABLET PORTRAIT 
+  @media only screen and (max-width: 991px) {
+    display: block;
+  }
+}
+
+
+
+
+
 
 #page-home-infographic-title{
   // margin-bottom: 47px;

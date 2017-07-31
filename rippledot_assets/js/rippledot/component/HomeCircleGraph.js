@@ -57,7 +57,7 @@ rippledot.component.HomeCircleGraph = function(options, element) {
 
   
 
-  console.log('rippledot.component.HomeCircleGraph: init');
+  // console.log('rippledot.component.HomeCircleGraph: init');
 };
 goog.inherits(rippledot.component.HomeCircleGraph, goog.events.EventTarget);
 
@@ -104,7 +104,8 @@ rippledot.component.HomeCircleGraph.prototype.create_raphael = function() {
 
   this.paper = Raphael(this.container[0], rippledot.component.HomeCircleGraph.WIDTH, rippledot.component.HomeCircleGraph.HEIGHT);
 
-  this.paper.customAttributes.arc = function (value, total, R) {
+  //this.paper.customAttributes.arc = function (value, total, R) {
+  this.paper['customAttributes']['arc'] = function (value, total, R) {
       var alpha = 360,
           alpha2 = 360 / total * value,
           a = (90 - alpha2) * Math.PI / 180,
@@ -117,7 +118,7 @@ rippledot.component.HomeCircleGraph.prototype.create_raphael = function() {
           path = [["M", 140, 140 - R], ["A", R, R, 0, +(alpha2 > 180), 1, x, y]];
       }
       // return {path: path, stroke: color};
-      return {path: path};
+      return {'path': path};
   };
 
   var path_bg_attr = {"stroke": "#DCDCDC", "stroke-width": 10};
@@ -126,7 +127,7 @@ rippledot.component.HomeCircleGraph.prototype.create_raphael = function() {
   //this.path_container = 
 
   var path_attr = {"stroke": "#FD3D39", "stroke-width": 10, 'stroke-linecap': "round", 'stroke-opacity': 0};
-  this.path = this.paper.path().attr(path_attr).attr({arc: [0, 1, 130]});       // 130 = radius of circle
+  this.path = this.paper.path().attr(path_attr).attr({'arc': [0, 1, 130]});       // 130 = radius of circle
 
   this.path.rotate(this.rotation_value, 140, 140);
   
@@ -155,11 +156,11 @@ rippledot.component.HomeCircleGraph.prototype.update_percent = function(percent_
   if (!percent_param || percent_param == 1) {
       percent_param = 1;
       /// this.path.animate({arc: [percent_param, 1, 130]}, 0, "bounce");
-      this.path.animate({arc: [percent_param, 1, 130]}, 0);
+      this.path.animate({'arc': [percent_param, 1, 130]}, 0);
 
   } else {
       // this.path.animate({arc: [percent_param, 1, 130]}, 0, "elastic");
-      this.path.animate({arc: [percent_param, 1, 130]}, 0);
+      this.path.animate({'arc': [percent_param, 1, 130]}, 0);
   }
   
 
@@ -169,9 +170,9 @@ rippledot.component.HomeCircleGraph.prototype.update_percent = function(percent_
  * @param  {Number} percent_param
  */
 rippledot.component.HomeCircleGraph.prototype.update_percent_instant = function(percent_param) {
-  console.log('percent_param: ' + percent_param);
+  // console.log('percent_param: ' + percent_param);
   this.percent_obj['percent'] = percent_param;
-  this.path.animate({arc: [percent_param, 1, 130]}, 0, ">");
+  this.path.animate({'arc': [percent_param, 1, 130]}, 0, ">");
 
 };
 

@@ -73,7 +73,7 @@ rippledot.page.Transaction = function(options, element) {
    */
   this.transaction_filter = null;
 
-  this.random_object = {x:0};
+  this.random_object = {'x':0};
 
 
   
@@ -116,9 +116,12 @@ rippledot.page.Transaction.EVENT_01 = '';
 rippledot.page.Transaction.prototype.init = function() {
   rippledot.page.Transaction.superClass_.init.call(this);
 
+
+  /*
   if (this.is_transaction_detail_page) {
     // this.create_fullpage();
   }
+  */
 
   if (this.is_transaction_index_page) {
     this.parse_data();
@@ -127,6 +130,11 @@ rippledot.page.Transaction.prototype.init = function() {
 
     this.create_transaction_buttons();
     this.create_transaction_filter();
+
+    // turn on filter permanently (only)
+    if (manic.IS_MOBILE == false) {
+      this.show_filter();
+    }
 
     this.on_transaction_filter_change(null);    // call it once
   }
@@ -204,6 +212,7 @@ rippledot.page.Transaction.prototype.create_transaction_buttons = function() {
   this.no_result = $('#page-transaction-index-no-result');
 
   
+  /*  
   this.show_filter_btn.click(function(event){
     this.show_filter();
   }.bind(this));
@@ -211,6 +220,9 @@ rippledot.page.Transaction.prototype.create_transaction_buttons = function() {
   this.hide_filter_btn.click(function(event){
     this.hide_filter();
   }.bind(this));
+  */
+  
+
 
   this.load_more_btn.click(function(event){
     this.load_more();
@@ -266,7 +278,7 @@ rippledot.page.Transaction.prototype.show_filter = function(){
     this.no_result.addClass('open-version');
 
     // constant update layout
-    TweenMax.to(this.random_object, 0.5, {x:100, delay: 0.1, onUpdate: this.on_filter_update, onUpdateScope: this});
+    TweenMax.to(this.random_object, 0.5, {'x':100, delay: 0.1, onUpdate: this.on_filter_update, onUpdateScope: this});
   }
 }
 
@@ -290,7 +302,7 @@ rippledot.page.Transaction.prototype.hide_filter = function(){
     this.no_result.removeClass('open-version');
 
     // constant update layout
-    TweenMax.to(this.random_object, 0.7, {x:100, delay: 0.4, onUpdate: this.on_filter_update, onUpdateScope: this});
+    TweenMax.to(this.random_object, 0.7, {'x':100, delay: 0.4, onUpdate: this.on_filter_update, onUpdateScope: this});
   }
 }
 
@@ -552,19 +564,11 @@ rippledot.page.Transaction.prototype.is_item_valid = function (item_param) {
   // return is_category_valid && is_deal_type_valid && is_year_valid;
   return is_category_valid && is_deal_type_valid;
 
-  return false;
+  // return false;
 };
 
 
 
-rippledot.page.Transaction.prototype.sample_method_calls = function() {
-
-  // sample override
-  rippledot.page.Transaction.superClass_.method_02.call(this);
-
-  // sample event
-  this.dispatchEvent(new goog.events.Event(rippledot.page.Transaction.EVENT_01));
-};
 
 //    ____   _    ____  ____  _____
 //   |  _ \ / \  |  _ \/ ___|| ____|

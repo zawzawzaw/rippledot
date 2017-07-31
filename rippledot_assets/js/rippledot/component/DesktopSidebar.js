@@ -97,7 +97,7 @@ rippledot.component.DesktopSidebar.prototype.create_element_array = function() {
     if (item_a.hasClass('selected')){
       this.current_index = i;
 
-      console.log('this.current_index: ' + i);
+      // console.log('this.current_index: ' + i);
     }
 
     sidebar_item = new rippledot.component.DesktopSidebarItem({
@@ -220,7 +220,7 @@ rippledot.component.DesktopSidebar.prototype.delayed_change_color = function(){
  */
 rippledot.component.DesktopSidebar.prototype.set_selected = function(num_param) {
 
-  console.log('set_selected: ' + num_param);
+  // console.log('set_selected: ' + num_param);
   
   if(this.has_temp == true) {
 
@@ -380,7 +380,7 @@ rippledot.component.DesktopSidebar.prototype.on_item_mouseout = function(event) 
 
 };
 
-rippledot.component.DesktopSidebar.prototype.public_method_06 = function() {};
+
 
 
 //    _______     _______ _   _ _____ ____
@@ -514,7 +514,7 @@ rippledot.component.DesktopSidebarItem = function(options, element) {
 
   
 
-  console.log('rippledot.component.DesktopSidebarItem: init');
+  // console.log('rippledot.component.DesktopSidebarItem: init');
 };
 goog.inherits(rippledot.component.DesktopSidebarItem, manic.ui.HoverItem);
 
@@ -612,11 +612,6 @@ rippledot.component.DesktopSidebarItem.prototype.on_mouseout = function(){
   
 };
 
-rippledot.component.DesktopSidebarItem.prototype.private_method_03 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.private_method_04 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.private_method_05 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.private_method_06 = function() {};
-
 
 //    ____  _   _ ____  _     ___ ____
 //   |  _ \| | | | __ )| |   |_ _/ ___|
@@ -626,13 +621,6 @@ rippledot.component.DesktopSidebarItem.prototype.private_method_06 = function() 
 //
 
 
-rippledot.component.DesktopSidebarItem.prototype.public_method_01 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.public_method_02 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.public_method_03 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.public_method_04 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.public_method_05 = function() {};
-rippledot.component.DesktopSidebarItem.prototype.public_method_06 = function() {};
-
 
 //    _______     _______ _   _ _____ ____
 //   | ____\ \   / / ____| \ | |_   _/ ___|
@@ -640,42 +628,4 @@ rippledot.component.DesktopSidebarItem.prototype.public_method_06 = function() {
 //   | |___  \ V / | |___| |\  | | |  ___) |
 //   |_____|  \_/  |_____|_| \_| |_| |____/
 //
-
-/**
- * @param {object} event
- */
-rippledot.component.DesktopSidebarItem.prototype.on_event_handler_01 = function(event) {
-};
-
-/**
- * @param {object} event
- */
-rippledot.component.DesktopSidebarItem.prototype.on_event_handler_02 = function(event) {
-};
-
-/**
- * @param {object} event
- */
-rippledot.component.DesktopSidebarItem.prototype.on_event_handler_03 = function(event) {
-};
-
-/**
- * @param {object} event
- */
-rippledot.component.DesktopSidebarItem.prototype.on_event_handler_04 = function(event) {
-};
-
-
-
-
-
-
-rippledot.component.DesktopSidebarItem.prototype.sample_method_calls = function() {
-
-  // sample override
-  rippledot.component.DesktopSidebarItem.superClass_.method_02.call(this);
-
-  // sample event
-  this.dispatchEvent(new goog.events.Event(rippledot.component.DesktopSidebarItem.EVENT_01));
-};
 

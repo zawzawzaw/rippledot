@@ -92,51 +92,6 @@ rippledot.page.People.prototype.init = function() {
 };
 
 
-//    ____  ____  _____     ___  _____ _____
-//   |  _ \|  _ \|_ _\ \   / / \|_   _| ____|
-//   | |_) | |_) || | \ \ / / _ \ | | |  _|
-//   |  __/|  _ < | |  \ V / ___ \| | | |___
-//   |_|   |_| \_\___|  \_/_/   \_\_| |_____|
-//
-
-/*
-rippledot.page.People.prototype.create_fullpage = function() {
-
-  if ($('#fullpage').length != 0){
-
-    $('#fullpage').fullpage({
-        'controlArrows': false,
-        'verticalCentered': false,
-        'animateAnchor': false,
-        'scrollOverflow': true,
-
-        'sectionSelector': '.fullpage-section',
-        'slideSelector': '.fullpage-slide',
-
-        'scrollOverflowOptions': {        // enables text selection iScroll
-          'preventDefault':false
-        },
-
-        'afterLoad': this.on_fullpage_section_load.bind(this),
-        
-        'afterRender': function(){
-
-          this.update_page_layout();
-
-        }.bind(this),
-        'afterResize': function(){
-
-          this.update_page_layout();
-
-        }.bind(this)
-    });
-
-
-
-  } // end if
-};
-*/
-
 
 
 rippledot.page.People.prototype.create_expanding_detail_transaction = function() {
@@ -181,20 +136,11 @@ rippledot.page.People.prototype.expand_detail_transaction = function() {
     this.is_transaction_expanded = true;
 
     this.transaction_expandable_btn_container.slideUp(500);
-    this.transaction_expandable_content.slideDown(500, this.expand_detail_transaction_delayed.bind(this));
+    // this.transaction_expandable_content.slideDown(500, this.expand_detail_transaction_delayed.bind(this));
+    this.transaction_expandable_content.slideDown(500);
 
   }
 };
-
-rippledot.page.People.prototype.expand_detail_transaction_delayed = function() {
-
-  // console.log('expand_detail_transaction_delayed');
-
-  // $.fn.fullpage.reBuild();
-  
-
-};
-
 
 
 //    _______     _______ _   _ _____ ____
@@ -203,54 +149,6 @@ rippledot.page.People.prototype.expand_detail_transaction_delayed = function() {
 //   | |___  \ V / | |___| |\  | | |  ___) |
 //   |_____|  \_/  |_____|_| \_| |_| |____/
 //
-
-/**
- * @param  {String} anchorLink
- * @param  {Number} index
- */
-rippledot.page.People.prototype.on_fullpage_section_load = function(anchorLink, index) {
-  // console.log('anchorLink: ' + anchorLink);
-
-  /*
-  switch(anchorLink) {
-    case 'detail':
-
-      // this.desktop_header.show_bg();
-      TweenMax.delayedCall(0.3, this.desktop_sidebar.change_color, ['normal'], this.desktop_sidebar);
-      
-      break;
-
-    case 'transactions-adviced':
-      this.desktop_header.show_bg();
-      TweenMax.delayedCall(0.3, this.desktop_sidebar.change_color, ['normal'], this.desktop_sidebar);
-
-      break;
-
-    default:
-      this.desktop_header.show_bg();
-      TweenMax.delayedCall(0.3, this.desktop_sidebar.change_color, ['normal'], this.desktop_sidebar);
-      break;
-  }
-  */
-};
-
-/**
- * @param {object} event
- */
-rippledot.page.People.prototype.on_event_handler_02 = function(event) {
-};
-
-
-
-rippledot.page.People.prototype.sample_method_calls = function() {
-
-  // sample override
-  rippledot.page.People.superClass_.method_02.call(this);
-
-  // sample event
-  this.dispatchEvent(new goog.events.Event(rippledot.page.People.EVENT_01));
-};
-
 
 
 //    _        _ __   _____  _   _ _____
