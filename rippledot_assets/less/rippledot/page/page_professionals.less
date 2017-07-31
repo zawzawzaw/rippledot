@@ -55,6 +55,9 @@
 #page-professionals-intro-introduction{
   margin-bottom: 21px;
 
+  color: @off-black;
+
+  /*
   .default-copy{
     p{
       color: @off-black;
@@ -79,6 +82,7 @@
       }
     }
   }
+  */
 
 } // #page-professionals-intro-introduction
 
@@ -89,10 +93,25 @@
 
 
 #page-professionals-intro-image{
-  margin-left: 40px;
+  // margin-left: 40px;
+  margin-left: 15px;
+
   .manic-image-container{
-    height: 385px;
+    // height: 385px;
+    height: 520px;
   }
+
+
+  // TABLET LANDSCAPE
+  @media only screen and (max-width: 1024px) and (min-width: 992px) {
+    margin-top: 85px;
+    margin-left: 40px;
+
+    .manic-image-container{
+      height: 400px;
+    }
+  }
+
 
   // TABLET PORTRAIT
   @media only screen and (max-width: 991px) {

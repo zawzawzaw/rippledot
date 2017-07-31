@@ -36,23 +36,19 @@
                 <h4>Who We Are</h4>
                 <h1>Global Reach</h1>
               </div>
-
-              <div id="page-global-reach-content-image-mobile" class="visible-sm visible-xs">
-                <div class="manic-image-container has-full-width">
-                  <img src="" 
-                    data-image-tablet="images_cms/global_reach/global-reach-map.png"
-                    data-image-mobile="images_cms/global_reach/global-reach-map.png">
-                </div>
-                
-                <div id="page-global-reach-content-intro-mobile">
-                  <div class="default-copy">
-                    <p>Specialists in cross-border transactions.</p>
-                  </div>
-                </div>
-              </div> <!-- page-global-reach-content-image-mobile -->
-
-
             </div>
+
+            <div id="page-global-reach-content-subtitle">
+              <h3>Specialists in cross-border transactions.</h3>
+            </div>
+
+            <div id="page-global-reach-content-image-mobile" class="visible-sm visible-xs">
+              <div class="manic-image-container has-full-width">
+                <img src="" 
+                  data-image-tablet="images_cms/global_reach/global-reach-map.png"
+                  data-image-mobile="images_cms/global_reach/global-reach-map.png">
+              </div>
+            </div> <!-- page-global-reach-content-image-mobile -->
             
           </div> <!-- page-global-reach-content-container -->
 
@@ -67,13 +63,6 @@
             <div class="manic-image-container has-full-width">
               <img src="" data-image-desktop="images_cms/global_reach/global-reach-map-02.png">
             </div>
-
-            <div id="page-global-reach-content-intro">
-              <div class="default-copy">
-                <p>Specialists in cross-border transactions.</p>
-              </div>
-            </div>
-
           </div>
 
 

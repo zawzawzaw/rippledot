@@ -17,16 +17,12 @@
   <div id="search-data-container">
 
     <div class="search-data-item" data-url="index.php" data-name="Home"></div>
-    <div class="search-data-item" data-url="transaction-index.php" data-name="Transactions"></div>
+
     <div class="search-data-item" data-url="profile.php" data-name="Profile"></div>
-    <div class="search-data-item" data-url="principles-and-values.php" data-name="Principles & Values"></div>
-    <div class="search-data-item" data-url="people-index.php" data-name="Our People"></div>
-    <div class="search-data-item" data-url="what-we-do.php" data-name="What We Do"></div>
-
-    <div class="search-data-item" data-url="press-release.php" data-name="Press Release"></div>
     <div class="search-data-item" data-url="global-reach.php" data-name="Global Reach"></div>
-    <div class="search-data-item" data-url="contact-us.php" data-name="Contact Us"></div>
-
+    <div class="search-data-item" data-url="press-release.php" data-name="Press Release"></div>
+    
+    <div class="search-data-item" data-url="people-index.php" data-name="Our People"></div>
     <div class="search-data-item" data-url="people-detail-atin-kukreja.php" data-name="Atin Kukreja"></div>
     <div class="search-data-item" data-url="people-detail-koh-boon-hwee.php" data-name="Koh Boon Hwee"></div>
     <div class="search-data-item" data-url="people-detail-bernard-toh.php" data-name="Bernard Toh"></div>
@@ -43,12 +39,17 @@
     <div class="search-data-item" data-url="people-detail-yi-wei-toh.php" data-name="Yi Wei Toh"></div>
     <div class="search-data-item" data-url="people-detail-alvin-ng.php" data-name="Alvin Ng"></div>
     <div class="search-data-item" data-url="people-detail-dorothy-wong.php" data-name="Dorothy Wong"></div>
+    
+    <div class="search-data-item" data-url="what-we-do.php" data-name="What We Do"></div>
+    <div class="search-data-item" data-url="rippledot-difference.php" data-name="Rippledot Difference"></div>
+    <div class="search-data-item" data-url="transaction-index.php" data-name="Transactions"></div>
 
-    <div class="search-data-item" data-url="transaction-detail-orange-valley.php" data-name="Orange Valley"></div>
+    <div class="search-data-item" data-url="transaction-detail-myanmar-brewery.php" data-name="Myanmar Brewery"></div>
+    <div class="search-data-item" data-url="transaction-detail-nera-payment-solutions.php" data-name="Nera Payment Solutions"></div>
     <div class="search-data-item" data-url="transaction-detail-innovalues.php" data-name="Innovalues"></div>
+    <div class="search-data-item" data-url="transaction-detail-orange-valley.php" data-name="Orange Valley"></div>
     <div class="search-data-item" data-url="transaction-detail-interplex-holdings-limited.php" data-name="Interplex Holdings Limited"></div>
     <div class="search-data-item" data-url="transaction-detail-classic-fine-foods.php" data-name="Classic Fine Foods"></div>
-    <div class="search-data-item" data-url="transaction-detail-myanmar-brewery.php" data-name="Myanmar Brewery"></div>
     <div class="search-data-item" data-url="transaction-detail-seksun-supernova.php" data-name="Seksun (Supernova)"></div>
     <div class="search-data-item" data-url="transaction-detail-first-engineering.php" data-name="First Engineering"></div>
     <div class="search-data-item" data-url="transaction-detail-goodpack.php" data-name="Goodpack"></div>
@@ -60,6 +61,17 @@
     <div class="search-data-item" data-url="transaction-detail-unisteel.php" data-name="Unisteel"></div>
     <div class="search-data-item" data-url="transaction-detail-first-engineering-2012.php" data-name="First Engineering"></div>
     <div class="search-data-item" data-url="transaction-detail-antares-restaurant-group.php" data-name="Antares Restaurant Group"></div>
+    
+
+
+
+    <div class="search-data-item" data-url="contact-us.php" data-name="Careers"></div>
+    <div class="search-data-item" data-url="professionals.php" data-name="Professionals"></div>
+    <div class="search-data-item" data-url="students-and-graduates.php" data-name="Students & Graduates"></div>
+
+    <div class="search-data-item" data-url="contact-us.php" data-name="Contact Us"></div>
+    <div class="search-data-item" data-url="legal.php" data-name="Legal"></div>
+
   </div>
 
   <!--
@@ -186,7 +198,6 @@
                   <a href="javascript:void(0);">Who We Are</a>
                   <ul>
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="principles-and-values.php">Principles & Values</a></li>
                     <li><a href="global-reach.php">Global Reach</a></li>
                     <li><a href="press-release.php">Press Releases</a></li>
                   </ul>
@@ -272,34 +283,20 @@
                   <?php if($current_page == "profile-page"): ?>
 
                     <li class="selected"><a href="profile.php">Profile</a></li>
-                    <li><a href="principles-and-values.php">Principles & Values</a></li>
-                    <li><a href="global-reach.php">Global Reach</a></li>
-                    <li><a href="press-release.php">Press Releases</a></li>
-
-                  <?php elseif($current_page == "principles-and-values-page"): ?>
-
-                    <li><a href="profile.php">Profile</a></li>
-                    <li class="selected"><a href="principles-and-values.php">Principles & Values</a></li>
                     <li><a href="global-reach.php">Global Reach</a></li>
                     <li><a href="press-release.php">Press Releases</a></li>
 
                   <?php elseif($current_page == "global-reach-page"): ?>
 
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="principles-and-values.php">Principles & Values</a></li>
                     <li class="selected"><a href="global-reach.php">Global Reach</a></li>
                     <li><a href="press-release.php">Press Releases</a></li>
 
                   <?php elseif($current_page == "press-release-page"): ?>
 
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="principles-and-values.php">Principles & Values</a></li>
                     <li><a href="global-reach.php">Global Reach</a></li>
                     <li class="selected"><a href="press-release.php">Press Releases</a></li>
-
-
-
-
 
                   <?php elseif($current_page == "what-we-do-page"): ?>
 

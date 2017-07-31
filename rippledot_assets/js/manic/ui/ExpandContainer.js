@@ -18,6 +18,8 @@ manic.ui.ExpandContainer = function(options, element) {
   this.options = $.extend({}, manic.ui.ExpandContainer.DEFAULT, options);
   this.element = element;
 
+  this.element.data('manic.ui.ExpandContainer', this);
+
   this.title_element = this.element.find('.manic-expand-container-title');
   this.content_element = this.element.find('.manic-expand-container-content');
 

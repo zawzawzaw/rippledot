@@ -58,13 +58,13 @@
 
             <div id="page-professionals-intro-introduction">
               <div class="default-copy">
-                <p>The work you do will have a direct effect on business and the community. At Rippledot Capital, you will make an impact.</p>
+                <p>When Director Ravi Ravulaparthi, a veteran in the technology, media and telecommunications sector, decided to join Rippledot in 2015, it had been the people who had attracted him most. He’d worked for years in large organisations and international banks, but he was seeking something different. “I knew the quality of the team; I knew Rippledot was a nimble organisation run by really smart, professional people,” he said. People with great instincts with a penchant for executing deals. “That was the core appeal,” said Ravi.</p>
               </div>
             </div>
 
             <div id="page-professionals-intro-copy">
               <div class="default-copy">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Come sociis natoque penatibus there magnis distance parturient montes, nascetur ridiculus muster. Donec quamur felis, ultricies nectur, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vellvet aliquet necty, vulputate eget, arcu. In enim justo rhoncus ut imperdiet anther venenatis.</p>
+                <p>For Director Harsh Rajpal, another industry veteran, this time in food and agriculture, it was Rippledot’s unique and effective model that had lured him in. “Rippledot’s model is all about going deep with the client,” said Harsh, who’s been with the company since 2017. “We take a consulting-based approach to M&A, rather than a broking approach. It’s a more challenging approach, but where, I believe, the industry should be headed.” It also happens to be an approach that’s proven extremely successful.</p>
               </div>
             </div>
 
@@ -120,7 +120,8 @@
 
         </div>
 
-        <div class="col-md-7 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+
+        <div class="col-md-7 col-md-push-1 col-tablet-landscape-6 col-tablet-landscape-push-1 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
 
           <div id="page-careers-people-content">
 
@@ -128,7 +129,7 @@
               <div class="page-careers-people-center">
 
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-tablet-landscape-10 col-sm-12">
 
 
                     <div id="page-careers-people-title-02">

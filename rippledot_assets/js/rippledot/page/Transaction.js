@@ -64,6 +64,11 @@ rippledot.page.Transaction = function(options, element) {
   this.no_result = null;
 
 
+  if (this.is_transaction_index_page == true) {
+    this.transaction_index_content_element = $('#page-transaction-index-content')
+    this.transaction_index_filter_element = $('#page-transaction-index-filter')
+  }
+  
   
   
 
@@ -74,6 +79,7 @@ rippledot.page.Transaction = function(options, element) {
   this.transaction_filter = null;
 
   this.random_object = {'x':0};
+  this.random_object_2 = {'x':0};
 
 
   
@@ -224,6 +230,9 @@ rippledot.page.Transaction.prototype.create_transaction_buttons = function() {
   
 
 
+
+
+
   this.load_more_btn.click(function(event){
     this.load_more();
   }.bind(this));
@@ -238,13 +247,54 @@ rippledot.page.Transaction.prototype.create_transaction_filter = function() {
 
   this.transaction_filter = new rippledot.component.TransactionFilter({}, this.transaction_filter_element);
 
-  
-
   goog.events.listen(this.transaction_filter, rippledot.component.TransactionFilter.ON_CHANGE, this.on_transaction_filter_change.bind(this));
   
 
 
-  
+
+  // listen to the expanding containers
+  if (manic.IS_MOBILE == false) {
+
+
+    var item = null;
+
+    /**
+     * @type {manic.ui.ExpandContainer}
+     */
+    var expand_container = null;
+
+
+    item = $('#page-transaction-index-filter-expand-industry');
+
+    if (item.length != 0) {
+
+      expand_container = item.data('manic.ui.ExpandContainer');
+      goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_EXPAND, function(event){
+        this.update_item_content_height();
+      }.bind(this));
+      goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_COLLAPSE, function(event){
+        this.update_item_content_height();
+      }.bind(this));
+    }
+
+
+
+    item = $('#page-transaction-index-filter-expand-deal-type');
+
+    if (item.length != 0) {
+
+      expand_container = item.data('manic.ui.ExpandContainer');
+      goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_EXPAND, function(){
+        this.update_item_content_height();
+      }.bind(this));
+      goog.events.listen(expand_container, manic.ui.ExpandContainer.ON_COLLAPSE, function(){
+        this.update_item_content_height();
+      }.bind(this));
+    }
+    
+
+    
+  } // end if
   
   
 };
@@ -331,6 +381,23 @@ rippledot.page.Transaction.prototype.load_more = function(){
 
 };
 
+
+rippledot.page.Transaction.prototype.update_item_content_height = function(){
+
+  // console.log('update_item_content_height');
+
+  this.random_object_2['x'] = 0;
+  TweenMax.to(this.random_object_2, 0.65, {'x':100, delay: 0.0, onUpdate: this.update_item_content_height_update, onUpdateScope: this});
+}
+
+rippledot.page.Transaction.prototype.update_item_content_height_update = function(){
+
+  var target_height = this.transaction_index_filter_element.outerHeight();
+  this.transaction_index_content_element.css({
+    'min-height': target_height + 'px'
+  });
+
+};
 
 
 //    _______     _______ _   _ _____ ____
@@ -458,7 +525,7 @@ rippledot.page.Transaction.prototype.on_transaction_filter_change = function(eve
 
 
 
-
+  this.update_item_content_height();
 
   this.update_manic_image_containers();
 
@@ -471,7 +538,8 @@ rippledot.page.Transaction.prototype.on_transaction_filter_change = function(eve
  */
 rippledot.page.Transaction.prototype.is_item_valid = function (item_param) {
 
-  var is_category_valid = true;   // true by default
+  // var is_category_valid = true;   // true by default
+  var is_category_valid = false;
   var is_deal_type_valid = false;   // false by default
   // var is_year_valid = true;
 
@@ -490,6 +558,7 @@ rippledot.page.Transaction.prototype.is_item_valid = function (item_param) {
   if (this.transaction_filter.current_category_array.length == 0) {
     // all are valid
     is_category_valid = true;
+
   } else {
 
 
@@ -498,8 +567,13 @@ rippledot.page.Transaction.prototype.is_item_valid = function (item_param) {
       category = this.transaction_filter.current_category_array[i];
       has_category = item_param.data_category_array.indexOf(category) != -1;
 
+      /*
       if (has_category == false) {
         is_category_valid = false;
+      }
+      */
+      if (has_category == true) {
+        is_category_valid = true;
       }
     }
 
@@ -562,6 +636,7 @@ rippledot.page.Transaction.prototype.is_item_valid = function (item_param) {
 
   
   // return is_category_valid && is_deal_type_valid && is_year_valid;
+  /// return is_category_valid && is_deal_type_valid;
   return is_category_valid && is_deal_type_valid;
 
   // return false;

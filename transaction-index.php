@@ -12,7 +12,7 @@
   <?php include 'head.php'; ?>
 </head>
 
-<body class="page-transaction-index">
+<body class="page-transaction-index  min-height-version min-height-mobile-version">
   <?php include "header.php"; ?>
 
 
@@ -167,17 +167,18 @@
   </div> <!-- page-transaction-index-data-item-container -->
 
     
+  
+
   <!--
-     _____ ___ _____ _     _____
-    |_   _|_ _|_   _| |   | ____|
-      | |  | |  | | | |   |  _|
-      | |  | |  | | | |___| |___
-      |_| |___| |_| |_____|_____|
+      ____ ___  _   _ _____ _____ _   _ _____
+     / ___/ _ \| \ | |_   _| ____| \ | |_   _|
+    | |  | | | |  \| | | | |  _| |  \| | | |
+    | |__| |_| | |\  | | | | |___| |\  | | |
+     \____\___/|_| \_| |_| |_____|_| \_| |_|
 
   -->
 
-
-  <article id="page-transaction-index-title-section">
+  <article id="page-transaction-index-content-section" class="min-height-target min-height-target-mobile">
 
     <div class="desktop-header-spacer"></div>
     <div class="desktop-header-subnav-spacer"></div>
@@ -205,20 +206,6 @@
       </div>
     </div>
 
-  </article> <!-- page-transaction-index-title-section -->
-
-
-  <!--
-      ____ ___  _   _ _____ _____ _   _ _____
-     / ___/ _ \| \ | |_   _| ____| \ | |_   _|
-    | |  | | | |  \| | | | |  _| |  \| | | |
-    | |__| |_| | |\  | | | | |___| |\  | | |
-     \____\___/|_| \_| |_| |_____|_| \_| |_|
-
-  -->
-
-
-  <article id="page-transaction-index-content-section">
     <div class="container-fluid has-breakpoint">
       <div class="row">
 
@@ -303,7 +290,11 @@
 
             <div id="page-transaction-index-filter">
 
-              <div class="manic-expand-container" data-group="transaction-filter-group">
+              
+              
+
+
+              <div class="manic-expand-container" data-group="transaction-filter-group" id="page-transaction-index-filter-expand-industry">
 
                 <div class="manic-expand-container-title">
                   <h4>By Industry</h4>
@@ -328,7 +319,7 @@
                 </div>
               </div>
 
-              <div class="manic-expand-container" data-group="transaction-filter-group">
+              <div class="manic-expand-container" data-group="transaction-filter-group" id="page-transaction-index-filter-expand-deal-type">
 
                 <div class="manic-expand-container-title">
                   <h4>By Deal</h4>

@@ -56,13 +56,13 @@
 
             <div id="page-professionals-intro-introduction">
               <div class="default-copy">
-                <p>The work you do will have a direct effect on business and the community. At Rippledot Capital, you will make an impact.</p>
+                <p>If you desire to be a small cog in a huge machine, doing work that’s inconsequential or redundant, we’d suggest looking elsewhere. Rippledot prides itself on being a lean and flat organisation. “That means a tremendous amount of exposure and a lot of responsibility,” says Analyst Toh Yi Wei, who interned with Rippledot in 2016 before joining the firm a year later. Interns and new graduates are expected to hit the ground running at Rippledot. “It keeps things interesting and meaningful,” said Yi Wei.</p>
               </div>
             </div>
 
             <div id="page-professionals-intro-copy">
               <div class="default-copy">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Come sociis natoque penatibus there magnis distance parturient montes, nascetur ridiculus muster. Donec quamur felis, ultricies nectur, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vellvet aliquet necty, vulputate eget, arcu. In enim justo rhoncus ut imperdiet anther venenatis.</p>
+                <p>Being part of an intimate team also means working closely with experienced senior executives, all of whom are ready to mentor and share their expertise. “You’re constantly learning,” said Associate Roger Koh, who joined Rippledot in 2016. “With the small team setting, it’s very personal, you learn a lot from experienced mentors. It’s the real deal. You’re not wasting your time just pitching; you’re always working towards achieving an outcome.”</p>
               </div>
             </div>
 
@@ -118,7 +118,7 @@
 
         </div>
 
-        <div class="col-md-7 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+        <div class="col-md-7 col-md-push-1 col-tablet-landscape-6 col-tablet-landscape-push-1 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
 
           <div id="page-careers-people-content">
 
@@ -126,7 +126,7 @@
               <div class="page-careers-people-center">
 
                 <div class="row">
-                  <div class="col-md-8">
+                  <div class="col-md-8 col-tablet-landscape-10 col-sm-12">
 
 
                     <div id="page-careers-people-title-02">

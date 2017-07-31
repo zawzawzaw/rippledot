@@ -15,13 +15,12 @@
               <nav>
                 <ul>
                   <li><a href="profile.php">Profile</a></li>
-                  <li><a href="principles-and-values.php">Principles & values</a></li>
                   <li><a href="global-reach.php">Global reach</a></li>
                   <li><a href="press-release.php">Press release</a></li>
+                  <li><a href="people-index.php">Our people</a></li>
                 </ul>
 
                 <ul>
-                  <li><a href="people-index.php">Our people</a></li>
                   <li><a href="what-we-do.php">What we do</a></li>
                   <li><a href="rippledot-difference.php">The Rippledot difference</a></li>
                   <li><a href="transaction-index.php">Transactions</a></li>
