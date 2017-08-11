@@ -52,7 +52,7 @@
                       <div class="banner-copy-quote">
                         <p>
                           <span class="quote-start"></span>
-                          Our goal is to understand our clients better than they know themselves and offer honest advice so we can help them succeed and sleep peacefully at night.
+                          Each Team Member brings extensive industry knowledge, unrivaled relationships and substantial deal experience, resulting in a team of the industry's most sought after advisors.
                           <span class="quote-end"></span>
                         </p>
                       </div> <!-- banner-copy-quote -->

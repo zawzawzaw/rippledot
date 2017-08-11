@@ -52,7 +52,7 @@
                       <div class="banner-copy-quote">
                         <p>
                           <span class="quote-start"></span>
-                          We’re a high-performing team with great synergy — but we’re family-oriented too, and that people-focused attitude imbues our business.
+                          We are experienced bankers who manage the process from start to end, dealing with and anticipating issues, ensuring maximum deal certainty and a strong result.
                           <span class="quote-end"></span>
                         </p>
                       </div> <!-- banner-copy-quote -->

@@ -52,7 +52,7 @@
                       <div class="banner-copy-quote">
                         <p>
                           <span class="quote-start"></span>
-                          We prove to our clients that we understand their business and their problems better than perhaps even they do. We give personalised attention to each of our clients.
+                          We focus on unique perspectives that address today’s challenges and tomorrow’s opportunities. Personally committed to client success, we see your results as our reputation.
                           <span class="quote-end"></span>
                         </p>
                       </div> <!-- banner-copy-quote -->

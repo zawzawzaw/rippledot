@@ -47,8 +47,8 @@
                 <p>6 Battery Road #19-02A Singapore 049909</p>
 
                 <ul>
-                  <li><span>P</span><a href="tel:+65 6226 0788">+65 6226 0788</a></li>
-                  <li><span>F</span><a href="tel:+65 6226 2708">+65 6226 2708</a></li>
+                  <li><span>P</span><p>+65 6226 0788</p></li>
+                  <li><span>F</span><p>+65 6226 2708</p></li>
                   <li><span>E</span><a href="mailto:info@rippledot.com">info@rippledot.com</a></li>
                 </ul>
 
