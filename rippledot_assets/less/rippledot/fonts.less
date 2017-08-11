@@ -320,6 +320,11 @@ a{
     i{
       .body-font-italic;
     }
+    sup{
+      .body-font(0.8);
+      position: relative;
+      top: -3px;
+    }
   }
 
   li{
@@ -359,6 +364,9 @@ a{
       i{
         .body-font-italic(0.9);
       }
+      sup{
+        .body-font(0.8 * 0.9);
+      }
     }
 
     li{
@@ -391,6 +399,10 @@ a{
       }
       i{
         .body-font-italic-mobile;
+      }
+      sup{
+        .body-font-mobile(0.8);
+        top: -4px;
       }
     }
 

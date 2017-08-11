@@ -27,6 +27,14 @@
   <div id="page-transaction-index-data-item-container">
 
     <div class="page-transaction-index-data-item"
+      data-name="ILA Vietnam"
+      data-image="images_cms/transaction/transaction-index-ila-vietnam.jpg"
+      data-url="transaction-detail-ila-vietnam.php"
+      data-category="education"
+      data-deal-type="sale">
+    </div>
+
+    <div class="page-transaction-index-data-item"
       data-name="Nera Payment Solutions"
       data-image="images_cms/transaction/transaction-index-nera-payment-solutions.jpg"
       data-url="transaction-detail-nera-payment-solutions.php"
@@ -305,6 +313,7 @@
 
                     <li data-value="all" class="selected"><a href="javascript:void(0);">View all</a></li>
                     <li data-value="consumer"><a href="javascript:void(0);">Consumer</a></li>
+                    <li data-value="education"><a href="javascript:void(0);">Education</a></li>
                     <li data-value="food-and-beverage"><a href="javascript:void(0);">Food & Beverage</a></li>
                     <li data-value="healthcare"><a href="javascript:void(0);">Healthcare</a></li>
                     <li data-value="it-services"><a href="javascript:void(0);">IT Services</a></li>
