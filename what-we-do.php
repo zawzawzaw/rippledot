@@ -46,13 +46,15 @@
             <div class="page-default-title">
               <h4>Our expertise</h4>
               <h1>What We Do</h1>
+              <!-- <p>Rippledot Capital provides a full range of corporate advisory and financial services, including:</p> -->
             </div>
           </div> <!-- page-what-we-do-intro-title -->
 
         </div>
       </div>
-
-      <div class="row">
+      
+      <script>
+      /*<div class="row">
         <div class="col-md-5 col-tablet-landscape-6 hidden-sm hidden-xs">
 
           <div id="page-what-we-do-intro-image">
@@ -83,8 +85,86 @@
           
         </div>
 
-      </div> <!-- row -->
+      </div> <!-- row -->*/
+      </script>
+
+      <div class="row">
+
+        <div class="col-md-12 col-md-push-0 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+
+          <div id="page-what-we-do-expertise-item-container-container">
+            <div id="page-what-we-do-expertise-item-container" class="manic-box-item-container">
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>01</h4>
+                  <h3>Public and private mergers and acquisitions</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>02</h4>
+                  <h3>Corporate and asset strategic reviews</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>03</h4>
+                  <h3>Management buy-outs and management buy-ins</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>04</h4>
+                  <h3>Privatisations, divestments, demergers and corporate restructurings</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>05</h4>
+                  <h3>Entrepreneur and family succession planning and asset monetisation</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+              <div class="page-what-we-do-expertise-item manic-box-item">
+                <div class="manic-box-item-content">
+                  <h4>06</h4>
+                  <h3>Advice to independent committees of Company Boards</h3>
+                  <p>Lorem ipsum dolor sit amet, consect etuer there adipiscing elit. Aenean commodo an ligula eget dolor tenean massa tum sociis natoque penatibus the magnis disanc ther parturient montes nascetur ridiculus felis eu pede mollis mus. </p>
+                </div>
+              </div> <!-- page-what-we-do-expertise-item -->
+
+            </div> <!-- page-what-we-do-expertise-item-container -->
+
+
+            <div id="page-what-we-do-expertise-cta-container" class="hidden-sm hidden-xs">
+              <a href="transaction-index.php" class="large-arrow-cta">See all transactions</a>
+            </div>
+            
+          </div> <!-- page-what-we-do-expertise-item-container-container -->
+
+
+          
+          
+
+        </div>
+      </div>
+
     </div> <!-- container-fluid -->
+
+    <div id="page-what-we-do-cta-container-spacer" class="visible-sm visible-xs"></div>
+    <div id="page-what-we-do-cta-container" class="visible-sm visible-xs">
+      <a href="transaction-index.php" class="square-cta red-version full-width-version"><span class="arrow"></span>See all transactions</a>
+    </div>
 
     <div class="page-default-mobile-bottom-spacer visible-sm visible-xs"></div>
 
@@ -98,8 +178,9 @@
     |_____/_/\_\_|   |_____|_| \_\|_| |___|____/|_____|
 
   -->
-
-  <article id="page-what-we-do-expertise-section">
+  
+  <script>
+  /*<article id="page-what-we-do-expertise-section">
 
     <div class="container-fluid has-breakpoint">
       <div class="row">
@@ -193,7 +274,8 @@
       <a href="transaction-index.php" class="square-cta red-version full-width-version"><span class="arrow"></span>See all transactions</a>
     </div>
 
-  </article> <!-- page-what-we-do-expertise-section -->
+  </article> <!-- page-what-we-do-expertise-section -->*/
+  </script>
     
   <?php include "footer.php"; ?>
   <?php include "sidebar.php"; ?>
